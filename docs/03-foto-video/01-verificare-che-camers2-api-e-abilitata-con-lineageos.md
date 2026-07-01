@@ -2,8 +2,6 @@
 
 > LEGACY - percorso GCam, abbandonato in favore delle app proprietarie Sony. Conservato come riferimento storico. Per il percorso attuale vedi `../RUNBOOK.md`.
 
-Aaa
-
 Puoi controllare facilmente così:
 
 **Metodo rapido con app:**

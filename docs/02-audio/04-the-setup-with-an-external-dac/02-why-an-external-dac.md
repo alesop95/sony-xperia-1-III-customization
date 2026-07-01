@@ -16,10 +16,10 @@ LineageOS doesn't include any official APIs for this, and UAPP doesn't implement
 
 | **Configuration** | **Internal DAC** | **External USB DAC** |
 | --- | --- | --- |
-| Stock Android | ❌ Resampled | ❌ Resampled |
-| Modified Audio HAL | ✅ Clean, hi-res possible | ❌ No effect |
-| UAPP or similar app | 🚫 Not needed | ✅ Full bypass, bit-perfect |
-| Modified Audio HAL + UAPP | ✅ Best-case | ✅ Best-case (for DACs that support it) |
+| Stock Android |  Resampled |  Resampled |
+| Modified Audio HAL |  Clean, hi-res possible |  No effect |
+| UAPP or similar app |  Not needed |  Full bypass, bit-perfect |
+| Modified Audio HAL + UAPP |  Best-case |  Best-case (for DACs that support it) |
 
 UAPP on Xperia 1 III with LineageOS 22 (pdx215) without Sony HAL: on stock firmware, Sony has a proprietary audio implementation that includes optimizations and partial bypasses of AudioFlinger for certain modes (e.g. Direct PCM to internal DAC). LineageOS typically uses generic AOSP Audio HAL, and everything goes through AudioFlinger unless an app uses direct drivers/paths (and the kernel supports it).
 
@@ -33,4 +33,4 @@ The Sony Xperia 1 III already has an internal DAC of excellent quality and with 
 
 Essentially, one gets a transparent, neutral, and audiophile-grade pipeline instead of phone audio hardware limitations. We must also remember that using "bit-perfect mode" compatible players (e.g. Fiio, Poweramp, USB Audio Player Pro), you can bypass the Android mixer completely and send the native audio signal (24bit/96kHz, DSD, etc.) directly to the DAC. The advantage of an external DAC is therefore only real if the player supports it in bit-perfect mode.
 
-Moreover, when plugging an external DAC to the phone, it must be noticed that the phone acts only as an audio source. One could just buy a standalone DAC/music player and plug headphones directly into it. In the setups we are about to describe, the Sony Xperia 1 III is only used as a music source (USB audio emitter in OTG host mode). One could instead use a dedicated portable audio player or DAC/amp with onboard storage. This is different to what we usually refer to as a “DAP” (Digital Audio Player). A portable DAC/amp (like Questyle M15, FiiO KA5) is not a player, it's a converter, and needs a digital source (e.g., smartphone, tablet, PC). In that case one plays audio files directly from that device, and connect your headphones to its 4.4 mm balanced or 3.5 mm jack – bypassing the phone entirely.
+Moreover, when plugging an external DAC to the phone, it must be noticed that the phone acts only as an audio source. One could just buy a standalone DAC/music player and plug headphones directly into it. In the setups we are about to describe, the Sony Xperia 1 III is only used as a music source (USB audio emitter in OTG host mode). One could instead use a dedicated portable audio player or DAC/amp with onboard storage. This is different to what we usually refer to as a “DAP” (Digital Audio Player). A portable DAC/amp (like Questyle M15, FiiO KA5) is not a player, it's a converter, and needs a digital source (e.g., smartphone, tablet, PC). In that case one plays audio files directly from that device, and connect your headphones to its 4.4 mm balanced or 3.5 mm jack - bypassing the phone entirely.

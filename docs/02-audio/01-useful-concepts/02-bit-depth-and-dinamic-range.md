@@ -1,7 +1,5 @@
 # Bit depth (and dinamic range)
 
-Aaaa
-
 bit depth matters just as much. Audio resolution is 2-dimensional, and the sample rate is only your resolution in *one* dimension.
 PCM audio is amplitude over time. Two dimensions. You need resolution for the “time” axis, and you need resolution for the “amplitude” axis.
 Going high on one and low on the other doesn’t make much sense.
@@ -30,7 +28,7 @@ CD audio tracks use a technical standard called "red book" and are raw Pulse Cod
 
 With 16 bits of resolution, there are 16,536 possible increments of audio amplitude (loudness) and a maximum SNR of 96db. The maximum frequency is half of the sampling rate of 44.1 kHz, so 22.05 kHz, in theory, but CD players have a brickwall audio filter at 19khz to prevent digital control signals from mixing with audio. If you have ever put a data CD into an audio player, you might have heard the sound of software which is not very musical.
 
-[https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality](https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality) 
+[https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality](https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality)
 
 Sound is a continuos signal or analogue waveform. Digital recording equipment truncate information so that the waveform can be stored as a discrete signal in digital format, which can later be re-created or converted back to analogue form before it is fed to an amplifier or transducer.
 
@@ -46,11 +44,11 @@ The CD standard uses 16bits of data but DVD or Bluray can support 24bits of data
 
 In practical applications, 16bit CD or digital players reproduce only around13-14bits of resolution due to losses in the linerarity of the reproduced signal, from quantization errors and limitations of integrated circuits.
 
-[https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates](https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates) 
+[https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates](https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates)
 
-The high res recording has a higher bit depth — 24 rather than 16 bits — but most program material doesn’t take advantage of it. That’s because the dynamic range of a 16 bit recording is 96 dB. Assuming a peak level of 120 dB — a level that most home systems can’t even reproduce — that puts the noise floor at 24 dB, which is substantially below the noise floor of your listening room.
+The high res recording has a higher bit depth - 24 rather than 16 bits - but most program material doesn’t take advantage of it. That’s because the dynamic range of a 16 bit recording is 96 dB. Assuming a peak level of 120 dB - a level that most home systems can’t even reproduce - that puts the noise floor at 24 dB, which is substantially below the noise floor of your listening room.
 
-Pop songs in particular don’t need anything like 24 bits. Only the very widest range acoustical recordings — an uncompressed Mahler symphony, say — can potentially use 24 bits (or in practice, more like 21, since converters aren’t linear enough to use all 24).
+Pop songs in particular don’t need anything like 24 bits. Only the very widest range acoustical recordings - an uncompressed Mahler symphony, say - can potentially use 24 bits (or in practice, more like 21, since converters aren’t linear enough to use all 24).
 
 Where 24 bits does come in handy is when making a recording. Since it’s impossible to predict precisely what the peak level will be, a bit of headroom has to be left, meaning that not all bits are used. So the 21 bits of usable dynamic range becomes more useful.
 
@@ -60,14 +58,11 @@ The reason that it is recommended to work at 24 bit when recording is because yo
 
 I have no interest in debating an already well established fact, so I will disable the comments, sorry.
 
-If you wish to test the difference. Take a 24bit file, dither it down to 16bit, then perform a null test on the audio. This is done by playing both files simultaneously with the polarity of one file reversed. The identical, but inverted audio cancels out, leaving you with just the differences between the files. Assuming you have done all this properly you will have a little noise down around -90–100dB (ish) which would of course be completely masked by 90dB of music.
+If you wish to test the difference. Take a 24bit file, dither it down to 16bit, then perform a null test on the audio. This is done by playing both files simultaneously with the polarity of one file reversed. The identical, but inverted audio cancels out, leaving you with just the differences between the files. Assuming you have done all this properly you will have a little noise down around -90-100dB (ish) which would of course be completely masked by 90dB of music.
 
 I’m not saying you should not use 24bit audio, you absolutely should. But there is no audible difference in “quality”. It’s just the noise floor.
 
-[https://www.quora.com/Is-Hi-Res-FLAC-24-bit-96-khz-better-than-CD-quality-Flac-16-bit-44-1-khz-Can-you-hear-the-difference](https://www.quora.com/Is-Hi-Res-FLAC-24-bit-96-khz-better-than-CD-quality-Flac-16-bit-44-1-khz-Can-you-hear-the-difference) 
+[https://www.quora.com/Is-Hi-Res-FLAC-24-bit-96-khz-better-than-CD-quality-Flac-16-bit-44-1-khz-Can-you-hear-the-difference](https://www.quora.com/Is-Hi-Res-FLAC-24-bit-96-khz-better-than-CD-quality-Flac-16-bit-44-1-khz-Can-you-hear-the-difference)
 
-Aaaaa
+[https://www.quora.com/Can-you-hear-the-difference-in-quality-between-24bit-and-32bit-192khz-music-files](https://www.quora.com/Can-you-hear-the-difference-in-quality-between-24bit-and-32bit-192khz-music-files)
 
-[https://www.quora.com/Can-you-hear-the-difference-in-quality-between-24bit-and-32bit-192khz-music-files](https://www.quora.com/Can-you-hear-the-difference-in-quality-between-24bit-and-32bit-192khz-music-files) 
-
-aaaaa

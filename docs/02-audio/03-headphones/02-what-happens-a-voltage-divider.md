@@ -10,7 +10,7 @@ Dove:
 - : impedenza d’uscita della sorgente (amplificatore)
 - : impedenza delle cuffie (carico)
 
-Ad esempio, se la sorgente ha un'impedenza d'uscita non trascurabile (es. 10 Ω), si crea una perdita di tensione significativa con delle cuffie a bassa impedenza. Dalla formula sopra, il rapporto diventa 0.76, ovvero si ha il 76% della tensione disponibile. 
+Ad esempio, se la sorgente ha un'impedenza d'uscita non trascurabile (es. 10 Ω), si crea una perdita di tensione significativa con delle cuffie a bassa impedenza. Dalla formula sopra, il rapporto diventa 0.76, ovvero si ha il 76% della tensione disponibile.
 
 Delle cuffie ad alta impedenza (es. 300 Ω), prendendo la stessa formula, si ha il 97§% della tensione disponibile. Il comportamento è più lineare, minore distorsione causata dalla sorgente, maggiore compatibilità con amplificatori di qualità non eccelsa.
 
@@ -28,15 +28,15 @@ Per questo motivo le cuffie ad alta impedenza sono meno sensibili alla qualità 
 
 Esempi noti di cuffie con impedenza commerciale (valore nominale):
 
-- Sennheiser HD600 / HD650 — tipicamente 300 Ω
+- Sennheiser HD600 / HD650 - tipicamente 300 Ω
 - Beyerdynamic DT 880 (250 Ω)
-- Sennheiser HD800 — 300 Ω
+- Sennheiser HD800 - 300 Ω
 
 Questi modelli sono ampiamente utilizzati in contesti dove vengono effettuate misure THD+N e, talvolta, IMD in laboratori indipendenti. Tuttavia, i dati precisi di Bl(x), Kms(x) non sono pubblicati.
 
 ## A good quality amplifier
 
-In ogni caso, l’impedenza d’uscita non è soltanto ciò che definisce la “qualità” di un amplificatore perché può essere considerato un indice critico per l’adattamento di carico. Un amplificatore può essere perfettamente lineare, basso rumore, alta dinamica — ma se ha un’impedenza d’uscita elevata, colorerà il suono quando lavora con carichi variabili (come le cuffie). Il concetto chiave è il fattore di smorzamento (damping factor):
+In ogni caso, l’impedenza d’uscita non è soltanto ciò che definisce la “qualità” di un amplificatore perché può essere considerato un indice critico per l’adattamento di carico. Un amplificatore può essere perfettamente lineare, basso rumore, alta dinamica - ma se ha un’impedenza d’uscita elevata, colorerà il suono quando lavora con carichi variabili (come le cuffie). Il concetto chiave è il fattore di smorzamento (damping factor):
 
 Maggiore è il fattore di smorzamento, più l’amplificatore controlla il carico (cuffia o altoparlante), “dominandolo” quindi elettricamente e controllandone le variazioni. Anche qui bisogna tenere in considerazione che le impedenze non sono ideali/resistive nella realtà e quindi si ha:
 
@@ -44,9 +44,9 @@ Dunque, se  cambia come ad esempio nel caso di picchi di impedenza a causa di ri
 
 ### Example
 
-Supponiamo un esempio con dei valori pratici plausibili. Ad esempio, se un DAC ha un’uscita  di 70Ω e una cuffia ha una impedenza  non troppo alta di 32Ω ma con un picco a 70Ω sui 3kHz dovuto alla risonanza di quel driver, questo cambia il damping factor a quella frequenza (attorno a) e Il trasferimento di segnale cambia con la frequenza, e quindi l’SPL (sound pressure level) generato dalla cuffia cambia anche a parità di tensione di ingresso. Questo significa che il DAC non è neutro in uscita e la cuffia non suona come dovrebbe. 
+Supponiamo un esempio con dei valori pratici plausibili. Ad esempio, se un DAC ha un’uscita  di 70Ω e una cuffia ha una impedenza  non troppo alta di 32Ω ma con un picco a 70Ω sui 3kHz dovuto alla risonanza di quel driver, questo cambia il damping factor a quella frequenza (attorno a) e Il trasferimento di segnale cambia con la frequenza, e quindi l’SPL (sound pressure level) generato dalla cuffia cambia anche a parità di tensione di ingresso. Questo significa che il DAC non è neutro in uscita e la cuffia non suona come dovrebbe.
 
-Ingegneristicamente, nei DAC/ampli di alta qualità, si mira a < 1Ω  per avere un DF > 100 anche con cuffie da 100Ω e assumere virtualmente questo “trasferimento” costante. I DAC quelli un po' più “consumer” o da smartphone spesso hanno 10-30 Ω e su cuffie da 32Ω - 50Ω la risposta è influenzata. 
+Ingegneristicamente, nei DAC/ampli di alta qualità, si mira a < 1Ω  per avere un DF > 100 anche con cuffie da 100Ω e assumere virtualmente questo “trasferimento” costante. I DAC quelli un po' più “consumer” o da smartphone spesso hanno 10-30 Ω e su cuffie da 32Ω - 50Ω la risposta è influenzata.
 
 ## More on DACs and amplifiers
 
@@ -55,10 +55,10 @@ Ingegneristicamente, nei DAC/ampli di alta qualità, si mira a < 1Ω  per avere 
 In un DAC/amplificatore non ideale, troviamo principalmente tre componenti che giocano un ruolo chiave per quanto detto finora:
 
 1. Stadio d’uscita op-amp + resistore in serie
-   1. Molti DAC hanno stadi d’uscita con un'op-amp e una resistenza di uscita esplicita (es. 10–100 Ω). Serve come protezione contro corto circuito o carichi instabili e stabilità dell’ampli op-amp (soprattutto se è un current-feedback) e persino come attenuazione di ringing su cavi lunghi o carichi reattivi.
+   1. Molti DAC hanno stadi d’uscita con un'op-amp e una resistenza di uscita esplicita (es. 10-100 Ω). Serve come protezione contro corto circuito o carichi instabili e stabilità dell’ampli op-amp (soprattutto se è un current-feedback) e persino come attenuazione di ringing su cavi lunghi o carichi reattivi.
    1. Questo resistore rappresenta la parte spesso puramente resistiva di  (ovvero ) e non trascurabile
 
-Questa è la componente dominante di   e la più prevedibile, ma non l’unica. L’intera impedenza totale del circuito varia comunque con la frequenza, anche se una parte è costante, e le altre componenti di impedenza () derivano da quanto segue. 
+Questa è la componente dominante di   e la più prevedibile, ma non l’unica. L’intera impedenza totale del circuito varia comunque con la frequenza, anche se una parte è costante, e le altre componenti di impedenza  derivano da quanto segue.
 
 1. Capacitori di accoppiamento
    1. Spesso ci sono condensatori in serie per bloccare la DC offrendo un’impedenza capacitiva alle basse frequenze:
@@ -85,12 +85,12 @@ In headphones amps is usually used the balanced output. Balanced output means th
 Technically speaking, differently from the unbalanced output (single-ended - SE) whose signal path per channel is 1 hot (signal) wire and 1 ground wire shared between left and right, the balanced output has:
 
 - 1 hot (+) wire
-- 1 cold (–) wire, which carries the inverted signal
+- 1 cold (-) wire, which carries the inverted signal
 - Ground is either separate or handled differently
 
 This way, the headphone driver receives both the normal and inverted signals. Because the cold line carries an inverted copy of the signal, any noise or interference picked up along the cable is canceled out (common-mode rejection - CMRR). This means cleaner audio, especially with long cables or electrically noisy environments.
 
-So, in a “standard” (single-Ended) wiring in headphones one wire carries the audio signal (+) and one wire is ground (–), shared by both left and right drivers:
+So, in a “standard” (single-Ended) wiring in headphones one wire carries the audio signal (+) and one wire is ground (-), shared by both left and right drivers:
 
     +-------------+             +------------+
     | Amplifier   |             | Headphone  |
@@ -101,19 +101,19 @@ So, in a “standard” (single-Ended) wiring in headphones one wire carries the
 
 The signal goes from amp hot then to the driver and returns via ground. Both drivers share the same ground wire.
 
-In the balanced configuration, each driver has two separate wires: a positive (+) and a negative (–) signal with no shared ground between left and right:
+In the balanced configuration, each driver has two separate wires: a positive (+) and a negative (-) signal with no shared ground between left and right:
 
     +------------------+                   +-------------------+
     | Balanced Amp Out  |                   | Balanced Headphone |
     | Left + -----------|-------------------| Left Driver +     |
-    | Left – -----------|-------------------| Left Driver –     |
+    | Left - -----------|-------------------| Left Driver -     |
     | Right + ----------|-------------------| Right Driver +    |
-    | Right – ----------|-------------------| Right Driver –    |
+    | Right - ----------|-------------------| Right Driver -    |
     +------------------+                   +-------------------+
 
 The negative wire carries an inverted copy of the positive signal, so the driver receives a *differential signal*. The driver coil sees a larger voltage swing because the amp is pushing one wire positive and the other negative simultaneously. This creates twice the voltage difference, leading to higher power output and better control.
 
-Moreover, balanced amps can deliver almost double the voltage swing compared to single-ended for the same supply voltage. This usually means more power available for demanding headphones (like high impedance or low sensitivity) and better driver control, tighter bass, more dynamic range. Since the left and right channels are completely separated, stereo separation can also improve because of crosstalk reducing. 
+Moreover, balanced amps can deliver almost double the voltage swing compared to single-ended for the same supply voltage. This usually means more power available for demanding headphones (like high impedance or low sensitivity) and better driver control, tighter bass, more dynamic range. Since the left and right channels are completely separated, stereo separation can also improve because of crosstalk reducing.
 
 Physically a balanced headphone cable uses special connectors like:
 

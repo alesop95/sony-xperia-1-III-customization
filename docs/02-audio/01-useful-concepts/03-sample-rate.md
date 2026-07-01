@@ -1,9 +1,5 @@
 # Sample rate
 
-aaaa
-
-Aaaa
-
 ## What’s the point in higher sample rates than 44.1kHz?
 
 L'udito umano arriva fino a circa 20 kHz, quindi la legge di Nyquist-Shannon stabilisce che basta un campionamento a ~40 kHz per catturare l'intero spettro udibile. I CD usano 44.1 kHz, lasciando una piccola riserva per applicare filtri anti-aliasing migliori.
@@ -16,27 +12,27 @@ L’ingegnere Christopher Montgomery (Xiph.org) afferma:
 
 Dan Lavry (Lavry Engineering) aggiunge che il sampling a 192 kHz compromette l’accuratezza del segnale e introduce distorsioni
 
-In test doppi-ciechi condotti da Mark Waldrep (AIX Records), i partecipanti – professionisti e ascoltatori comuni – non hanno percepito differenze tra audio hi-res e CD-quality. Uno studio della Boston Audio Society (Meyer & Moran) ha dimostrato che il salto qualità maggiore si ottiene passando da MP3 a 16/44.1 o 24/48; salire a 96 o 192 kHz non migliora ulteriormente la qualità uditiva
+In test doppi-ciechi condotti da Mark Waldrep (AIX Records), i partecipanti - professionisti e ascoltatori comuni - non hanno percepito differenze tra audio hi-res e CD-quality. Uno studio della Boston Audio Society (Meyer & Moran) ha dimostrato che il salto qualità maggiore si ottiene passando da MP3 a 16/44.1 o 24/48; salire a 96 o 192 kHz non migliora ulteriormente la qualità uditiva
 
-[https://www.headphonesty.com/2025/05/192khz-worse-44-1khz-most-music/](https://www.headphonesty.com/2025/05/192khz-worse-44-1khz-most-music/) 
+[https://www.headphonesty.com/2025/05/192khz-worse-44-1khz-most-music/](https://www.headphonesty.com/2025/05/192khz-worse-44-1khz-most-music/)
 
 Paul Maunder (ingegnere Pro Tools) osserva che frequenze ultrasoniche caricano inutilmente CPU e plugin, aumentando la probabilità di saturazione/distorsione
 
-Gli audiofili e gli ingegneri concordano: per l’ascolto a casa, 44.1–48 kHz a 16 o 24 bit è più che adeguato. Le conversioni ad alta frequenza servono solo durante le fasi di registrazione o mastering. L’uso di 192 kHz comporta file molto più pesanti (circa 6× rispetto a 44.1 kHz/16 bit), consumo extra di CPU e storage inutilizzati [https://hifiauditions.wordpress.com/2025/05/19/with-44-1-khz-weve-had-enough](https://hifiauditions.wordpress.com/2025/05/19/with-44-1-khz-weve-had-enough).
+Gli audiofili e gli ingegneri concordano: per l’ascolto a casa, 44.1-48 kHz a 16 o 24 bit è più che adeguato. Le conversioni ad alta frequenza servono solo durante le fasi di registrazione o mastering. L’uso di 192 kHz comporta file molto più pesanti (circa 6× rispetto a 44.1 kHz/16 bit), consumo extra di CPU e storage inutilizzati [https://hifiauditions.wordpress.com/2025/05/19/with-44-1-khz-weve-had-enough](https://hifiauditions.wordpress.com/2025/05/19/with-44-1-khz-weve-had-enough).
 
-**Per l’ascolto normale**: CD-quality – **44.1 kHz/16-bit** (o 24-bit) è più che sufficiente. Un’altra discussione su Reddit (r/qobuz) ha raccolto diverse voci autorevoli: “from an audio engineer – In my experience, higher sample rates in the RECORDING process make a much bigger difference than in the listening process…” “I use Audirvana … the vocals are more diffuse in 24/192 or a more aggressive sound mostly in treble areas…”
+**Per l’ascolto normale**: CD-quality - **44.1 kHz/16-bit** (o 24-bit) è più che sufficiente. Un’altra discussione su Reddit (r/qobuz) ha raccolto diverse voci autorevoli: “from an audio engineer - In my experience, higher sample rates in the RECORDING process make a much bigger difference than in the listening process…” “I use Audirvana … the vocals are more diffuse in 24/192 or a more aggressive sound mostly in treble areas…”
 
-[https://www.reddit.com/r/qobuz/comments/1kowgpu/192khz_worse_than_44khz](https://www.reddit.com/r/qobuz/comments/1kowgpu/192khz_worse_than_44khz) 
+[https://www.reddit.com/r/qobuz/comments/1kowgpu/192khz_worse_than_44khz](https://www.reddit.com/r/qobuz/comments/1kowgpu/192khz_worse_than_44khz)
 
 That higher sampling rates mean slightly less inherent latency, which is important in live sound applications, at least to a point. Sometimes you need equipment to go to an extent that the human ear is not capable for the sake of resolution and precision. More precisely, oversampling becomes a powerful resource when trying to analyze "very fast" events (i.e., gunshots or supersonic events).
 
-Moreover, frequencies over 20kHz (much over, actually), can contribute musically to an audio recording. Cymbals are one of the instruments where this effect is most noticeable. Without frequencies above 20kHz represented correctly, cymbals sound *extremely* flat. Cymbals are supposed to sound much crunchier than they do on digital recordings. Though you will recognize a digital recording of a cymbal as a cymbal because you've been trained to do so, if you listen to a live cymbal crash and immediately listen to a digital, sampled recording of it, I guarantee you will notice the difference. This difference is called **timbre**, and it is very important. Piano and Drums since the cover a wide marging of the audible spectrum. Starting at 44.1Khz and up with 16bits, my tests "showed" me a considerably difference in sound quality, call it psycho-acoustics but there is a difference. What’s more, the difference between the sound a violin virtuoso produces and the sound a fiddler produces has nothing to do with the fundamental frequency - which can be the same. It's in the waveform, which is dependent on the harmonics. So if you sample at a 20KHz rate, and someone is playing a violin, you won't hear the 7th harmonic of very high pitch note when the recording is played back, and it'll sound more like a pure tone (sine wave) at the fundamental frequency than it will like a well-played violin playing that note. The mixture of various harmonics is why a violin, a trumpet and a clarinet, all playing the same note, sound different. 
+Moreover, frequencies over 20kHz (much over, actually), can contribute musically to an audio recording. Cymbals are one of the instruments where this effect is most noticeable. Without frequencies above 20kHz represented correctly, cymbals sound *extremely* flat. Cymbals are supposed to sound much crunchier than they do on digital recordings. Though you will recognize a digital recording of a cymbal as a cymbal because you've been trained to do so, if you listen to a live cymbal crash and immediately listen to a digital, sampled recording of it, I guarantee you will notice the difference. This difference is called **timbre**, and it is very important. Piano and Drums since the cover a wide marging of the audible spectrum. Starting at 44.1Khz and up with 16bits, my tests "showed" me a considerably difference in sound quality, call it psycho-acoustics but there is a difference. What’s more, the difference between the sound a violin virtuoso produces and the sound a fiddler produces has nothing to do with the fundamental frequency - which can be the same. It's in the waveform, which is dependent on the harmonics. So if you sample at a 20KHz rate, and someone is playing a violin, you won't hear the 7th harmonic of very high pitch note when the recording is played back, and it'll sound more like a pure tone (sine wave) at the fundamental frequency than it will like a well-played violin playing that note. The mixture of various harmonics is why a violin, a trumpet and a clarinet, all playing the same note, sound different.
 
 [https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates](https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates).
 
 I have found 3 main reasons to use high sample rates:
 
-If your recordings are destined to be used for sound design a high sample rate allows you to capture information that will be audible if the audio is pitched down. Let’s say I make a recording at 48k, then pitch it down one octave. The original file had information up to 24kHz, but now the highest frequency in my pitch shifted file is only 12kHz. The result is dull sounding because of the missing information from 12–20k. If I record at 96k I will capture up to 48kHz, and the pitch shifted result now has informtion up to 24kHz. The processed signal will have a full frequency range and sound much more believable. Sample up to 192k and then I can even pitch shift a full 2 octaves and still have the full audible frequency range. (Watch the scene in The Matrix Reloaded with the “pipe fight”. The sound of the wind through the pipe during the slo-mo sequences still sounds realistic because the original recordings were at 96k.)
+If your recordings are destined to be used for sound design a high sample rate allows you to capture information that will be audible if the audio is pitched down. Let’s say I make a recording at 48k, then pitch it down one octave. The original file had information up to 24kHz, but now the highest frequency in my pitch shifted file is only 12kHz. The result is dull sounding because of the missing information from 12-20k. If I record at 96k I will capture up to 48kHz, and the pitch shifted result now has informtion up to 24kHz. The processed signal will have a full frequency range and sound much more believable. Sample up to 192k and then I can even pitch shift a full 2 octaves and still have the full audible frequency range. (Watch the scene in The Matrix Reloaded with the “pipe fight”. The sound of the wind through the pipe during the slo-mo sequences still sounds realistic because the original recordings were at 96k.)
 
 For classical ensembles the ultrasonic information that happens in the air contributes to the audible spectrum. Unfortunately it is common practice to close mic large ensembles sometimes and those interactions don’t have time to happen. By capturing this extended frequency range those interactions can happen inside the DAW. I do a lot of classical recording and I believe there is a value to high sample rate recordings in that situation.
 
@@ -44,7 +40,7 @@ Even if the recording does not make use of the extended range the extra data doe
 
 Having said all that I will admit that for pop or rock those high sample rates are usually unnecessary. If you mic a band with SM57s and a bunch of other cheap mics you can’t capture any of those high frequencies anyway, and unless you agree with #3 a higher sample rate will simply take up more space on your hard drive and make your computer work harder.
 
-[https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates](https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates) 
+[https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates](https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates)
 
 Ok so the sampling theorem says that the sample rate must be strictly greater then twice the bandwidth, so for the generally agreed 20kHz upper limit of human hearing (Which is actually optimistic for most people over 18 or so) we need at least a 40kHz sample rate.
 
@@ -106,7 +102,7 @@ Conclusion:
 
 For casual listening, 44.1kHz is a perfectly acceptable sampling rate. While higher rates can offer some benefits in audio production and may be preferred by some audiophiles, the perceived difference in sound quality for playback is often minimal and may not justify the increased file size or processing overhead. 
 
-[https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality](https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality) 
+[https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality](https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality)
 
 The higher the sample rate, the more clarity and precision. Overtones (harmonics) are destroyed by digital sampling, but more so with lower sample rates. A higher sample rate will have better reproduction of the *original analog overtones*.
 
@@ -128,15 +124,15 @@ Sadly the 44.1kHz rate doesn’t fit in well when video pictures are involved, s
 
 Note that although discrete, separate samples are taken, the frequency domain resolution *within the audio bandwidth* is infinite if the replay filtering is done correctly. In exactly the same way the amplitude resolution is also infinite provided that *dithering* is carried out correctly. The converted digital signal is indistinguishable from the original analogue one. The frequently met assertions that digital sampling results in stepped waveforms, with incomplete frequency resolution, are simply wrong.
 
-Quindi 
+Quindi
 
 If a human ear can hear no frequency greater than 20 kHz, and we need no more than 40 kHz sampling rates, why does equipment exist that plays and records at 96 or 128 kHz sample rates?
 
-[https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates](https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates) 
+[https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates](https://www.quora.com/If-a-human-ear-can-hear-no-frequency-greater-than-20-kHz-and-we-need-no-more-than-40-kHz-sampling-rates-why-does-equipment-exist-that-plays-and-records-at-96-or-128-kHz-sample-rates)
 
 The short answer is - filtering.
 
-Even very young people are not going to hear anything over 22khz. But some would say that the LPF roll-off needs to be quite shallow so as not to cause distortion and higher sampling rates provide more margin and prevent this roll-off eating into audible frequencies. Can’t argue with the theory, but in practice? No. Especially if your’re over 25 then that margin has naturally widened anyway. And the program needs to be well recorded and mastered rather than just upsampled and contain frequencies high enough to matter. [https://www.quora.com/Are-there-any-benefits-to-listening-to-music-sampled-higher-than-44-1-kHz](https://www.quora.com/Are-there-any-benefits-to-listening-to-music-sampled-higher-than-44-1-kHz) 
+Even very young people are not going to hear anything over 22khz. But some would say that the LPF roll-off needs to be quite shallow so as not to cause distortion and higher sampling rates provide more margin and prevent this roll-off eating into audible frequencies. Can’t argue with the theory, but in practice? No. Especially if your’re over 25 then that margin has naturally widened anyway. And the program needs to be well recorded and mastered rather than just upsampled and contain frequencies high enough to matter. [https://www.quora.com/Are-there-any-benefits-to-listening-to-music-sampled-higher-than-44-1-kHz](https://www.quora.com/Are-there-any-benefits-to-listening-to-music-sampled-higher-than-44-1-kHz)
 
 	According to the Nyquist-Shannon sampling theorem, it is necessary to take more than two samples per cycle of the highest frequency you want to capture. That means more than 40k samples per second if you want a system response flat to 20 kHz. Also, it is mandatory to absolutely prevent any frequencies that would violate the sampling theorem (i.e. > 20kHz) from getting to the analog-to-digital converter, so there is a need for an “anti-aliasing” filter to reject them. It’s tricky to design filters that go from completely passing a signal to totally rejecting it over a very narrow range, so you need to add a little more to the sampling rate to allow for “real world” filter performance. That will get you near to 44 kilosamples per second.
 
@@ -158,7 +154,7 @@ Sampling at higher rates makes it a LOT easier to design the anti-aliasing filte
 
 On the other hand, if I’m sampling at 128 kHz, I can have a filter that starts rolling off at 20 kHz and is, say, fully rolled off by 50 kHz. There’s no power above 64 kHz to alias in, especially that will alias below 20 kHz (anything above 108 kHz). A nice gentle slope, smooth phase response, etc. Then I take my 128 kHz sample stream and apply a *digital filter* to get my brickwall response - I can use lots of samples so I can control the phase behavior, I can have infinite precision in the calculations, and then I can resample down to 40 kHz sample rate. That digital filter can also compensate for non-ideal analog filter behavior.
 
-A similar thing applies to digital to analog conversion - If I have a 40 kHz DAC, what actually comes out is my desired signal from 0–20kHz, and aliases every 20 kHz, which I need to filter out. Same problem - I need a brickwall filter to get rid of them. Instead, I run my DAC at 128kHz (perhaps doing some prefiltering in the digital domain when bringing the sample rate up from 40 kHz to 128 kHz), run it through an easy to build, gentle, low pass filter that cuts off at 20kHz, rolling off by 40–50, etc.
+A similar thing applies to digital to analog conversion - If I have a 40 kHz DAC, what actually comes out is my desired signal from 0-20kHz, and aliases every 20 kHz, which I need to filter out. Same problem - I need a brickwall filter to get rid of them. Instead, I run my DAC at 128kHz (perhaps doing some prefiltering in the digital domain when bringing the sample rate up from 40 kHz to 128 kHz), run it through an easy to build, gentle, low pass filter that cuts off at 20kHz, rolling off by 40-50, etc.
 
 Back in the day, when getting 16 or 24 bits at 44 kHz was an ordeal, you used lots of op amps in your analog filters, each adding noise and aging and temperature stability problems. Now, you can likely use a passive filter - lower power, lower noise, etc.
 
@@ -171,7 +167,7 @@ Delta-sigma converters have only 1 (one) bit resolution, but extreme sampling fr
 	Higher sampling rates are useful during the production process to avoid e.g. rounding errors when performing mathematical operations on the source material (and of course, all of the mixing and filtering processes in contemporary audio production are computer-based, and so are “mathematical”). Can you actually *hear* the difference when higher sampling rates are used? Sometimes. Maybe. Now, prove that the difference is not the result of artifacts in the higher-rate equipment (i.e. that it is actually not doing a less-accurate job of recording and reproduction). Just because you can hear a difference, does not automatically mean that the high-rate gear is “superior”.
 
 The historical (cum technological) reasons for choosing 44.1 kHz as sampling rate are given here:
-[http://www.cs.columbia.edu/~hgs/audio/44.1.html](http://www.cs.columbia.edu/~hgs/audio/44.1.html) 
+[http://www.cs.columbia.edu/~hgs/audio/44.1.html](http://www.cs.columbia.edu/~hgs/audio/44.1.html)
 
 To summarise:
 1. It is recognised that to be able to reproduce upto 20 kHz which is generally accepted as the highest frequency human beings can hear, one needs to sample it *at least* twice that highest frequency (as per the Nyquist theorem), which is 40 kHz or more.
@@ -220,7 +216,7 @@ With a filter at 20 kHz, these filtering side-effects are audible on some materi
 
 Exactly how beneficial these high frequencies are in the real world is debatable, though...!
 
-Because a number of studies —
+Because a number of studies -
 
 [Neve 1992](http://jn.physiology.org/content/83/6/3548)
 [Theiss and Hawksford 1997](http://jn.physiology.org/content/83/6/3548)
@@ -228,13 +224,13 @@ Because a number of studies —
 [Yoshikawa et al. 1995](http://jn.physiology.org/content/83/6/3548),[1997](http://jn.physiology.org/content/83/6/3548)
 [Japan Audio Society 1999](http://jn.physiology.org/content/83/6/3548)
 
-— have shown that, even though the human ear can’t consciously perceive sound above 20KHz — (15–16KHz in most cases), brain activity is still affected by the presence of bandwidth extended as far as 32KHz or more. It could have to do with phase relationships between audible frequencies, which become more exact at higher resolutions, or the mere fact that the natural world imposes no 20KHz limit on frequencies transmitted through the air — (indeed there are ultrasonic frequencies present all around us) — and that we’re aware of them without “hearing” them, but in tests where the *same material* was presented *with* and *without* extended frequency response, listeners, *without being aware which one was being listened to*, preferred the extended frequency-response versions of the recordings well above statistical random.
+- have shown that, even though the human ear can’t consciously perceive sound above 20KHz - (15-16KHz in most cases), brain activity is still affected by the presence of bandwidth extended as far as 32KHz or more. It could have to do with phase relationships between audible frequencies, which become more exact at higher resolutions, or the mere fact that the natural world imposes no 20KHz limit on frequencies transmitted through the air - (indeed there are ultrasonic frequencies present all around us) - and that we’re aware of them without “hearing” them, but in tests where the *same material* was presented *with* and *without* extended frequency response, listeners, *without being aware which one was being listened to*, preferred the extended frequency-response versions of the recordings well above statistical random.
 
-There has also been a study —
+There has also been a study -
 
 [There's life above 20 kilohertz! A survey of musical instrument spectra to 102.4 kHz](http://www.cco.caltech.edu/~boyk/spectra/spectra.htm)
 
-— showing that (acoustic) musical performances have content above the audible spectrum.
+- showing that (acoustic) musical performances have content above the audible spectrum.
 
 We may yet find the same to be true of light and images; experiments in video transmission are being conducted to try and see if the inclusion of ultraviolet light spectra leads to more realistic images.
 
@@ -358,15 +354,15 @@ Honestly, though, for 99.99999% of listeners, any differences are entirely acade
 
 In sort, there *might* be benefits to high-SR audio, but there’s a lot of diminishing returns involved for the vast majority of listeners, and even for many artists and engineers.
 
-[https://www.quora.com/Are-there-any-benefits-to-listening-to-music-sampled-higher-than-44-1-kHz](https://www.quora.com/Are-there-any-benefits-to-listening-to-music-sampled-higher-than-44-1-kHz) 
+[https://www.quora.com/Are-there-any-benefits-to-listening-to-music-sampled-higher-than-44-1-kHz](https://www.quora.com/Are-there-any-benefits-to-listening-to-music-sampled-higher-than-44-1-kHz)
 
 **Yes and no**.
 
-**The actual case** is that, even though you cannot *hear* above 17–18KHz (as an adult), you *are* affected by it. Numerous studies using FMRI have shown that there *is* a difference in brain activity when lsitening to a recording of extended bandwidth beyond 20KHz vs. one without.
+**The actual case** is that, even though you cannot *hear* above 17-18KHz (as an adult), you *are* affected by it. Numerous studies using FMRI have shown that there *is* a difference in brain activity when lsitening to a recording of extended bandwidth beyond 20KHz vs. one without.
 
-There is also a benefit to phase relationships which (*even with a signal of 2KHz* — well within the range of hearing) are only going to be as accurate as 360(°)/(bandwidth/frequency), therefore a 2KHz tone would only attain a phase accuracy of 360/(20KHz/2KHz=10) or 36°. **Most people can hear phase differences of 30° or less**, so (based on a number of *double-blind listening* tests conducted), a statistically-above-random selection of listeners report a “better sense of placement” when played the same recording at high sample rate compared to 44.1KHz Fs.
+There is also a benefit to phase relationships which (*even with a signal of 2KHz* - well within the range of hearing) are only going to be as accurate as 360(°)/(bandwidth/frequency), therefore a 2KHz tone would only attain a phase accuracy of 360/(20KHz/2KHz=10) or 36°. **Most people can hear phase differences of 30° or less**, so (based on a number of *double-blind listening* tests conducted), a statistically-above-random selection of listeners report a “better sense of placement” when played the same recording at high sample rate compared to 44.1KHz Fs.
 
-**However**, you will only get the phase accuracy benefit if the source material was *recorded* at high sample rate — (most *isn’t*) — and the bandwidth benefit if your amplifier and speakers can reproduce frequencies beyond 20KHz — (most do *not*) — therefore the other answers are (somewhat) correct in most cases.
+**However**, you will only get the phase accuracy benefit if the source material was *recorded* at high sample rate - (most *isn’t*) - and the bandwidth benefit if your amplifier and speakers can reproduce frequencies beyond 20KHz - (most do *not*) - therefore the other answers are (somewhat) correct in most cases.
 
 For most people, no.
 

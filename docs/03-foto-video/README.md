@@ -10,9 +10,9 @@ Hai uno **Xperia 1 III (pdx215)** con LineageOS 22.2 (Android 15) installato.
 
 Hai uno **Xperia 1 III (pdx215)** con LineageOS 22.2 (Android 15) installato. Quindi:
 
-✅ Android 15 (API 35) → compatibile con la maggior parte delle app recenti.
-✅ Bootloader sbloccato → spesso permette di installare mod o fotocamere alternative.
-✅ No Sony stock camera app (presumibilmente) → su LineageOS non sempre ci sono tutte le funzionalità foto originali Sony.
+ Android 15 (API 35) → compatibile con la maggior parte delle app recenti.
+ Bootloader sbloccato → spesso permette di installare mod o fotocamere alternative.
+ No Sony stock camera app (presumibilmente) → su LineageOS non sempre ci sono tutte le funzionalità foto originali Sony.
 
 **APKs da provare (scaricabili da APKPure o simili)**
 
@@ -258,15 +258,15 @@ Fammi un attimo cercare...
 
 Perfetto, procediamo con l'installazione e la configurazione della GCam mod per il tuo Sony Xperia 1 III con Snapdragon 888 e Android 15 (LineageOS). Questa versione dovrebbe offrire una qualità fotografica superiore rispetto a Open Camera, soprattutto per HDR, Night Sight e dettagli in condizioni di scarsa illuminazione.
 
-📥 Passo 1: Scarica l'APK della GCam mod
+ Passo 1: Scarica l'APK della GCam mod
 
 Una versione consigliata per dispositivi con Snapdragon 888 è la MGC_8.8.224_A11_V14a_snap.apk. Questa versione è stata segnalata come compatibile con Android 15 e offre buone prestazioni senza necessità di configurazioni avanzate.
 
 [https://www.reddit.com/r/NOTHING/comments/1hlz4d8/gcam](https://www.reddit.com/r/NOTHING/comments/1hlz4d8/gcam)
 
-Una versione consigliata per dispositivi con Snapdragon 888 è la MGC_8.8.224_A11_V14a_snap.apk. Questa versione è stata segnalata come compatibile con Android 15 e offre buone prestazioni senza necessità di configurazioni avanzate. 
+Una versione consigliata per dispositivi con Snapdragon 888 è la MGC_8.8.224_A11_V14a_snap.apk. Questa versione è stata segnalata come compatibile con Android 15 e offre buone prestazioni senza necessità di configurazioni avanzate.
 
-https://www.reddit.com/r/NOTHING/comments/1hlz4d8/gcam 
+https://www.reddit.com/r/NOTHING/comments/1hlz4d8/gcam
 
 Però un utente reddit dice "It's the 2nd option on that page" che però è MGC_8.8.224_A11_V14a_MGC.apk (com.android.mgc)
 
@@ -306,7 +306,7 @@ Verifica che Camera2 API sia abilitata (su LineageOS di solito lo è) perché se
 
 L’app è stata installata con APKCombo Installer che poi dopo “Camera” ha detto “do you want to install this app?”
 
-**⚙️ Passo 2: Configura la GCam mod per il tuo Xperia 1 III**
+**Passo 2: Configura la GCam mod per il tuo Xperia 1 III**
 
 Dopo aver installato l'APK, è consigliabile importare un file di configurazione (XML) specifico per il tuo dispositivo. Questo ottimizza le impostazioni per ottenere la migliore qualità fotografica possibile.
 
@@ -330,7 +330,7 @@ Seleziona il file e clicca su “Restore” o “Applica”.
 
 L’app si riavvierà con le nuove impostazioni ottimizzate.
 
-**📸 Passo 3: Impostazioni consigliate per l'uso quotidiano**
+**Passo 3: Impostazioni consigliate per l'uso quotidiano**
 
 **Modalità HDR+**: abilitare automatico per migliorare la gamma dinamica delle foto.
 
@@ -340,7 +340,7 @@ L’app si riavvierà con le nuove impostazioni ottimizzate.
 
 **Controllo manuale di ISO ed esposizione**: Abilitato se desideri un controllo più preciso sulle tue foto.
 
-**✅ Passo 4: Verifica e ottimizza**
+**Passo 4: Verifica e ottimizza**
 
 Scatta alcune foto in diverse condizioni di luce per verificare le prestazioni.
 

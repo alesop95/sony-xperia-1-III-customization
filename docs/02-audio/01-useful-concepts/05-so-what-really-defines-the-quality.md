@@ -16,7 +16,7 @@ Once you start compressing audio, there are more variables. The particular compr
 
 But different encoders also produce better or worse compression... most of these algorithms, audio or video, specify the format, but not everything about how the format is created. So there's room for good and bad here... one example, the open source LAME encoder for MP3 has a reputation of producing noticeably better results than most commerically produced encoders. Similar claims are made of the x264 video encoder, versus many commercial AVC/H.264 encoders
 
-[https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality](https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality) 
+[https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality](https://www.quora.com/Does-a-higher-sample-rate-audio-really-mean-better-quality)
 
 Quindi, per audio invece compressi
 
@@ -31,12 +31,12 @@ Ma **non conterrà più informazioni audio** rispetto all’originale.
 Per capire se il file è genuinamente high-res, si può:
 
 - Guardare lo spettro con programmi tipo Spek o Audacity. Se sopra i ~22kHz non c’è nulla, è quasi sicuramente un file a 44.1kHz upsamplato. Si possono usare programmi semplici come:
-   - Spek (facilissimo da usare – basta aprirlo e trascinare dentro il file FLAC e poi osservare lo spettrogramma)
+   - Spek (facilissimo da usare - basta aprirlo e trascinare dentro il file FLAC e poi osservare lo spettrogramma)
    - Audacity (gratis, multipiattaforma)
    - Sonic Visualiser (più avanzato)
 - Controllare il sito ufficiale dell’artista o le piattaforme come Qobuz o HDtracks per vedere se esiste davvero una versione high-res di quell’album
 
-Se lo spettrogramma ha un taglio netto a 22 kHz, significa quasi sempre che il file proviene da un CD (44.1 kHz) e NON è vero high-res, anche se è stato “gonfiato” a 192 kHz. Se il grafico arriva oltre i 22 kHz, con informazioni presenti fino a 40-50-60 kHz (o oltre), è più probabile che sia davvero un file high-res — ma non è garanzia assoluta (potrebbe essere noise aggiunto).
+Se lo spettrogramma ha un taglio netto a 22 kHz, significa quasi sempre che il file proviene da un CD (44.1 kHz) e NON è vero high-res, anche se è stato “gonfiato” a 192 kHz. Se il grafico arriva oltre i 22 kHz, con informazioni presenti fino a 40-50-60 kHz (o oltre), è più probabile che sia davvero un file high-res - ma non è garanzia assoluta (potrebbe essere noise aggiunto).
 
 FLAC è solo il contenitore/compressione lossless, non il formato nativo SACD (che è DSD).
 
@@ -77,9 +77,9 @@ Hi-Res FLAC files (24-bit/96 kHz or higher) are technically superior to CD-quali
 
 **Conclusion**
 
-While Hi-Res FLAC files offer technical advantages, the perceived difference in sound quality can vary widely among listeners. For casual listeners or in everyday settings, CD-quality audio may suffice, while audiophiles and professionals might prefer the enhanced fidelity of Hi-Res formats, especially for critical listening. [https://www.quora.com/Is-Hi-Res-FLAC-24-bit-96-khz-better-than-CD-quality-Flac-16-bit-44-1-khz-Can-you-hear-the-difference](https://www.quora.com/Is-Hi-Res-FLAC-24-bit-96-khz-better-than-CD-quality-Flac-16-bit-44-1-khz-Can-you-hear-the-difference) 
+While Hi-Res FLAC files offer technical advantages, the perceived difference in sound quality can vary widely among listeners. For casual listeners or in everyday settings, CD-quality audio may suffice, while audiophiles and professionals might prefer the enhanced fidelity of Hi-Res formats, especially for critical listening. [https://www.quora.com/Is-Hi-Res-FLAC-24-bit-96-khz-better-than-CD-quality-Flac-16-bit-44-1-khz-Can-you-hear-the-difference](https://www.quora.com/Is-Hi-Res-FLAC-24-bit-96-khz-better-than-CD-quality-Flac-16-bit-44-1-khz-Can-you-hear-the-difference)
 
-Inoltre, va cercato su Qobuz, HDtracks, Bandcamp o altri store digitali se esiste DAVVERO una versione di quella combinazione <bit depth>, <sample rate>. 
+Inoltre, va cercato su Qobuz, HDtracks, Bandcamp o altri store digitali se esiste DAVVERO una versione di quella combinazione <bit depth>, <sample rate>.
 
 A volte si può anche controllare il DR (Dynamic Range)
 
@@ -93,7 +93,7 @@ Su una fonte o altri network si trovano spesso i rippaggi di questi remaster MoF
 
 ## So what is “bad” is really “bad”??
 
-Dal link [https://www.reddit.com/r/italy/s/igw0lQFn7b](https://www.reddit.com/r/italy/s/igw0lQFn7b) 
+Dal link [https://www.reddit.com/r/italy/s/igw0lQFn7b](https://www.reddit.com/r/italy/s/igw0lQFn7b)
 
 ![](assets/img-0005.jpeg)
 
@@ -138,7 +138,7 @@ Ciao, io sono nell’hobby dell’audiofilia da qualche anno ormai, ti dirò: or
 
 Che post sterile. "La Lancia Delta è molto meglio di questa Panda Hobby del '98! Non capisco la gente come faccia! Io noto la differenza!". Il target di Spotify è diverso da quello di Tidal. Il costo è diverso, anche. La libreria a disposizione, anche. Che rant sarebbe, scusa? Tutti quelli che usano Spotify sono dei plebei? Anche io fui obliterato dalla qualità Tidal, ma con Spotify per 3€ al mese ho tutta la musica di sto cazzo di mondo. Se voglio qualità audiofila mi compro il CD. Fine. Ci sono mille sfumature per avere buona qualità di ascolto, e ti assicuro che con attrezzatura di livello alto puoi tirare fuori cose interessanti da Spotify. In sintesi, hai scoperto l'acqua calda.
 
-Non sono un audiofilo, ma un musicista. Ascolto musica attraverso due monitor Yamaha HS80M (con cavi XLR) e la differenza tra un mp3 a 320kbps e un FLAC– su un buon master–si sente (maggiore limpidezza e distribuzione spaziale di alcune parti). Fa tutta questa differenza? Assolutamente no. La maggior parte delle persone la sentirebbero? No. Se ne può fare a meno? Sicuro. Però è piacevole.
+Non sono un audiofilo, ma un musicista. Ascolto musica attraverso due monitor Yamaha HS80M (con cavi XLR) e la differenza tra un mp3 a 320kbps e un FLAC- su un buon master-si sente (maggiore limpidezza e distribuzione spaziale di alcune parti). Fa tutta questa differenza? Assolutamente no. La maggior parte delle persone la sentirebbero? No. Se ne può fare a meno? Sicuro. Però è piacevole.
 
 Perfetto, proviamo un approccio un minimo scientifico perché io rimango scettico sul fatto che si riesca effettivamente a sentire la differenza.
 

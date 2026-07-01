@@ -61,6 +61,31 @@ def slugify(text, fallback="sezione"):
     return text or fallback
 
 
+# --- pulizia opzionale (--clean): rumore ereditato dal sorgente -------------
+# Rimuove emoji, normalizza i trattini lunghi in trattini brevi ed elimina le
+# righe segnaposto composte da una sola lettera ripetuta (es. "aaaa", "### Aaaa").
+# Preserva simboli tecnici come Omega (impedenza) e la freccia -> (implicazione).
+_EMOJI_RE = re.compile(
+    "[\U0001F000-\U0001FAFF\U00002600-\U000027BF\U00002B00-\U00002BFF\U0000FE00-\U0000FE0F]",
+    flags=re.UNICODE)
+_DASH_RE = re.compile("[‐-―−]")
+_PLACEHOLDER_RE = re.compile(r"(?m)^[ \t]*#{0,7}[ \t]*[Aa]{3,}\.?[ \t]*$\n?")
+
+
+def cleanup_text(content):
+    stats = {"placeholder": 0, "dashes": 0, "emoji": 0}
+    stats["placeholder"] = len(_PLACEHOLDER_RE.findall(content))
+    content = _PLACEHOLDER_RE.sub("", content)
+    content, stats["dashes"] = _DASH_RE.subn("-", content)
+    stats["emoji"] = len(_EMOJI_RE.findall(content))
+    content = _EMOJI_RE.sub("", content)
+    content = re.sub(r"\(\s*\)", "", content)              # parentesi svuotate dalle emoji
+    # ripristina il grassetto quando l'emoji rimossa lasciava spazi dentro i marcatori
+    content = re.sub(r"\*\*[ \t]*([^*\n]+?)[ \t]*\*\*", r"**\1**", content)
+    content = re.sub(r"[ \t]+$", "", content, flags=re.M)  # spazi a fine riga
+    return content, stats
+
+
 # --- numbering.xml: classifica liste numerate vs puntate --------------------
 def build_numbering_map(document):
     """Ritorna funzione (numId, ilvl) -> 'bullet'|'ordered'."""
@@ -334,6 +359,9 @@ def main():
     ap.add_argument("--annotations", default=None,
                     help="JSON percorso->banner markdown da iniettare dopo il titolo. "
                          "Default: annotations.json accanto allo script, se presente.")
+    ap.add_argument("--clean", action="store_true",
+                    help="rimuove emoji, normalizza i trattini lunghi ed elimina le righe "
+                         "segnaposto (es. 'aaaa') ereditate dal sorgente")
     args = ap.parse_args()
 
     # Annotazioni curate (es. banner LEGACY) iniettate nei file generati senza rompere
@@ -489,6 +517,7 @@ def main():
     image_records = []  # (file_md, nome_immagine)
     total_redactions = 0
     redacted_files = []  # (relpath, conteggio)
+    clean_tot = {"placeholder": 0, "dashes": 0, "emoji": 0}
 
     for path in order:
         f = files[path]
@@ -542,6 +571,10 @@ def main():
         if file_red:
             total_redactions += file_red
             redacted_files.append((rel_key, file_red))
+        if args.clean:
+            content, cst = cleanup_text(content)
+            for k in clean_tot:
+                clean_tot[k] += cst[k]
         content = re.sub(r"\n{3,}", "\n\n", content)
         with io.open(path, "w", encoding="utf-8") as fh:
             fh.write(content)
@@ -626,9 +659,25 @@ def main():
         report.append("- nessuna")
     report.append("")
 
+    if args.clean:
+        report.append("## Pulizia applicata (--clean)")
+        report.append("")
+        report.append("Rimozione deterministica di rumore ereditato dal sorgente: emoji, trattini "
+                      "lunghi normalizzati in trattini brevi, righe segnaposto (es. 'aaaa'). "
+                      "Divergenza voluta dal testo verbatim.")
+        report.append("")
+        report.append("- Righe segnaposto rimosse: %d" % clean_tot["placeholder"])
+        report.append("- Trattini normalizzati: %d" % clean_tot["dashes"])
+        report.append("- Emoji rimosse: %d" % clean_tot["emoji"])
+        report.append("")
+
     report_path = os.path.join(out_dir, "_CONVERSION-REPORT.md")
+    report_text = "\n".join(report) + "\n"
+    if args.clean:
+        # coerenza: niente emoji/trattini lunghi nemmeno nel report, che cita i titoli marcati
+        report_text, _ = cleanup_text(report_text)
     with io.open(report_path, "w", encoding="utf-8") as fh:
-        fh.write("\n".join(report) + "\n")
+        fh.write(report_text)
 
     # --- corpus testuale per verifica no-content-loss ---------------------
     src_text = []

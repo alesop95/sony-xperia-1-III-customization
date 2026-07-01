@@ -8,10 +8,10 @@ Open Camera si basa solo su Camera API 2, quindi può usare i 3 sensori e salvar
 | --- | --- | --- |
 | RAW | Sì | Sì |
 | Controllo manuale (ISO, shutter, focus) | Sì | Sì |
-| Accesso diretto a ISP e tuning hardware | ❌ | ✅ |
-| Qualità low-light, HDR, Bokeh, Eye AF, Zeiss tuning | ❌ | ✅ |
-| Supporto multiframe & algoritmi Sony | ❌ | ✅ |
-| UI e profili professionali (CineAlta) | ❌ | ✅ |
+| Accesso diretto a ISP e tuning hardware |  |  |
+| Qualità low-light, HDR, Bokeh, Eye AF, Zeiss tuning |  |  |
+| Supporto multiframe & algoritmi Sony |  |  |
+| UI e profili professionali (CineAlta) |  |  |
 
 Per ottenere il massimo dall’hardware fotografico dell’Xperia, è consigliato l’utilizzo delle applicazioni fotografiche proprietarie Sony, estratte direttamente dalla ROM ufficiale. Le principali sono:
 

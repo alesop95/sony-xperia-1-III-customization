@@ -12,21 +12,21 @@
 
 ## Sezioni con marcatori di lavoro dell'autore
 
-Titoli contenenti `(TBC)`, `aborted`, ❌ o ✔️, preservati verbatim:
+Titoli contenenti `(TBC)`, `aborted`,  o , preservati verbatim:
 
 - H6 - fastboot flash + boot patching (aborted)
 - H8 - (TBC) Installazione Magisk da Lineage recovery
 - H7 - (TBC) Micheal Jackson thriller (1982)
-- H7 - (TBC) Elton John – Goodbye Yellow Brick Road (1973)
-- H7 - (TBC) Led Zeppelin – IV (1971)
+- H7 - (TBC) Elton John - Goodbye Yellow Brick Road (1973)
+- H7 - (TBC) Led Zeppelin - IV (1971)
 - H5 - (TBC) DAC + amplifier in a single USB-C powered device
 - H8 - In-depth analysis for headphones (aborted)
-- H8 - In-depth analysis for FiiO Q15 (and comparison) ❌
-- H8 - In-depth analysis for Questyle M15 ❌
+- H8 - In-depth analysis for FiiO Q15 (and comparison)
+- H8 - In-depth analysis for Questyle M15
 - H9 - (TBC) UAPP compatibility
 - H9 - (TBC) Conclusions and alternatives
-- H8 - In-depth analysis for Shanling UA5 ❌
-- H8 - In-depth analysis for FiiO KAx ✔️
+- H8 - In-depth analysis for Shanling UA5
+- H8 - In-depth analysis for FiiO KAx
 - H9 - (TBC) Ubuntu Studio 25.04
 - H4 - (TBC) Troubleshooting
 - H4 - (TBC) App proprietarie Sony
@@ -96,4 +96,12 @@ Sostituzioni deterministiche (sidecar `tools/redactions.json`) per neutralizzare
 - 02-audio/02-calculation-for-benchmark-to-download/01-introduction.md: 3
 - 02-audio/02-calculation-for-benchmark-to-download/02-esempi.md: 26
 - 02-audio/03-headphones/03-what-happens-a-small-loudspeaker.md: 2
+
+## Pulizia applicata (--clean)
+
+Rimozione deterministica di rumore ereditato dal sorgente: emoji, trattini lunghi normalizzati in trattini brevi, righe segnaposto (es. 'aaaa'). Divergenza voluta dal testo verbatim.
+
+- Righe segnaposto rimosse: 50
+- Trattini normalizzati: 396
+- Emoji rimosse: 376
 

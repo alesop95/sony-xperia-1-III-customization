@@ -1,6 +1,6 @@
 # Che cos’è Magisk
 
-Perfetto, ottima domanda: Magisk è uno degli strumenti più potenti e versatili del mondo Android per chi vuole sbloccare il pieno potenziale del proprio dispositivo. 
+Perfetto, ottima domanda: Magisk è uno degli strumenti più potenti e versatili del mondo Android per chi vuole sbloccare il pieno potenziale del proprio dispositivo.
 
 Magisk è un sistema di root "moderno", modulare e invisibile creato da John Wu, che permette di ottenere i privilegi di root su Android senza modificare direttamente la partizione di sistema. Magisk ha due componenti principali:
 

@@ -2,7 +2,7 @@
 
 Driver ad alta impedenza richiedono bobine con più avvolgimenti, quindi maggiore resistenza R e induttanza L. La forza che muove il diaframma viene dalla ben nota legge di Lorentz:
 
-Con: 
+Con:
 
 - : intensità del campo magnetico
 - : corrente nella bobina
@@ -22,13 +22,13 @@ Dove  varia con la posizione della bobina e quindi dando una forza non lineare e
 
 È sensato parlare di escursione non lineare in una cuffia, con movimenti di pochi mm  perché la dimensione assoluta dell’escursione non è ciò che determina la distorsione, ma la linearità della forza rispetto allo spostamento. Anche su escursioni di 0,5mm, se  non è costante, la forza generata non sarà lineare rispetto alla corrente. Se la molla meccanica di ritorno (la sospensione) non è lineare, l’escursione crea distorsioni armoniche. A livelli SPL elevati (anche in cuffie), si può entrare in regime non lineare con distorsione armonica misurabile. Alcune cuffie premium includono voice coil simmetrici per ridurre le distorsioni da escursione minima.
 
-Quindi sì, nonostante la corsa sia breve, le tolleranze ridottissime e i materiali non perfettamente lineari rendono la distorsione da escursione un problema reale anche nelle cuffie [https://www.klippel.de/test-objects/micro-speakers-and-headphone-drivers.html](https://www.klippel.de/test-objects/micro-speakers-and-headphone-drivers.html). 
+Quindi sì, nonostante la corsa sia breve, le tolleranze ridottissime e i materiali non perfettamente lineari rendono la distorsione da escursione un problema reale anche nelle cuffie [https://www.klippel.de/test-objects/micro-speakers-and-headphone-drivers.html](https://www.klippel.de/test-objects/micro-speakers-and-headphone-drivers.html).
 
-Inoltre, anche se l’escursione è limitata (< 1 mm), sia Bl(x) che Kms(x) hanno curvature non perfettamente lineari, sufficiente per generare distorsioni analizzabili (>90 dB SPL) [https://www.klippel.de/fileadmin/klippel/Files/Know_How/Application_Notes/AN_24_Telecomm_Driver.pdf](https://www.klippel.de/fileadmin/klippel/Files/Know_How/Application_Notes/AN_24_Telecomm_Driver.pdf). La posizione e il campo magnetico non sono uniformi in tutta la corsa del coil: gli effetti sono reali e misurabili anche su piccole dimensioni. Bisogna quindi considerare che la distorsione armonica non è assolutamente l’unico fattore di distorsione da tenere in considerazione [https://www.youtube.com/watch?v=i1sa50hzEcM](https://www.youtube.com/watch?v=i1sa50hzEcM). 
+Inoltre, anche se l’escursione è limitata (< 1 mm), sia Bl(x) che Kms(x) hanno curvature non perfettamente lineari, sufficiente per generare distorsioni analizzabili (>90 dB SPL) [https://www.klippel.de/fileadmin/klippel/Files/Know_How/Application_Notes/AN_24_Telecomm_Driver.pdf](https://www.klippel.de/fileadmin/klippel/Files/Know_How/Application_Notes/AN_24_Telecomm_Driver.pdf). La posizione e il campo magnetico non sono uniformi in tutta la corsa del coil: gli effetti sono reali e misurabili anche su piccole dimensioni. Bisogna quindi considerare che la distorsione armonica non è assolutamente l’unico fattore di distorsione da tenere in considerazione [https://www.youtube.com/watch?v=i1sa50hzEcM](https://www.youtube.com/watch?v=i1sa50hzEcM).
 
 ## A little more in speaker non-linearities
 
-Provando ad essere un po' più rigorosi e tecnici sui principali fenomeni di distorsione nelle cuffie ci sarebbero da considerare anche altri fattori [https://www.klippel.de/fileadmin/_migrated/content_uploads/Klippel_Nonlinearity_Poster.pdf](https://www.klippel.de/fileadmin/_migrated/content_uploads/Klippel_Nonlinearity_Poster.pdf), [https://www.klippel.de/fileadmin/klippel/Files/News/Micro-speakers%20-%20Hybrids%20between%20headphones%20and%20loudspeakers.pdf](https://www.klippel.de/fileadmin/klippel/Files/News/Micro-speakers%20-%20Hybrids%20between%20headphones%20and%20loudspeakers.pdf): 
+Provando ad essere un po' più rigorosi e tecnici sui principali fenomeni di distorsione nelle cuffie ci sarebbero da considerare anche altri fattori [https://www.klippel.de/fileadmin/_migrated/content_uploads/Klippel_Nonlinearity_Poster.pdf](https://www.klippel.de/fileadmin/_migrated/content_uploads/Klippel_Nonlinearity_Poster.pdf), [https://www.klippel.de/fileadmin/klippel/Files/News/Micro-speakers%20-%20Hybrids%20between%20headphones%20and%20loudspeakers.pdf](https://www.klippel.de/fileadmin/klippel/Files/News/Micro-speakers%20-%20Hybrids%20between%20headphones%20and%20loudspeakers.pdf):
 
 - L’intermodulazione (IMD)
 - La non linearità del fattore di forza Bl(x)
@@ -38,17 +38,15 @@ La distorsione IMD si verifica quando due o più toni a frequenze diverse intera
 
 Per le altre due non-linearità, quella del fattore di forza esprime come la forza magnetica cambia con lo spostamento del voice coil (bobina). Questo perché se Bl diminuisce allontanandosi da x=0, si introduce distorsione armonica e IMD. La rigidità della sospensione anche è fonte di non linearità, perché la stiffness (Kms) varia con la posizione (spesso asimmetrica), causando distorsione armonica, spostamenti DC (offset) e IMD. La rigidità non lineare Kms(x) produce **compressione del segnale**, rigonfiamenti e alterazioni della curva SPL rispetto a un modello lineare [https://www.klippel.de/fileadmin/klippel/Files/Know_How/Application_Notes/AN_24_Telecomm_Driver.pdf](https://www.klippel.de/fileadmin/klippel/Files/Know_How/Application_Notes/AN_24_Telecomm_Driver.pdf), [https://www.klippel.de/know-how/measurements/mechanical-vibration/voice-coil-displacement.html](https://www.klippel.de/know-how/measurements/mechanical-vibration/voice-coil-displacement.html). Come effetti combinati, le asimmetrie di Bl(x) o Kms(x) causano offset DC nella posizione del coil, peggiorando così le distorsioni successive e rendendo instabile la risposta.
 
-È difficile trovare misurazioni Klippel su modelli di cuffie specifici (es. Sennheiser HD600, Beyerdynamic), perché la maggior parte delle analisi Klippel riguardano micro‑altoparlanti o trasduttori generici. Misurazioni estese di Bl(x), Kms(x), IMD su cuffie consumer non sono pubbliche – l’industria è molto riservata. I driver per in-ear o monitor in‑ear componente usano balanced-armature [https://www.klippel.de/test-objects/balanced-armature-transducer.html](https://www.klippel.de/test-objects/balanced-armature-transducer.html), con misure su T(x), Kms(x), ma non collegati a modelli venduti al consumatore finale.
-
-aaaaaaaaaaaaaaaaaa.
+È difficile trovare misurazioni Klippel su modelli di cuffie specifici (es. Sennheiser HD600, Beyerdynamic), perché la maggior parte delle analisi Klippel riguardano micro-altoparlanti o trasduttori generici. Misurazioni estese di Bl(x), Kms(x), IMD su cuffie consumer non sono pubbliche - l’industria è molto riservata. I driver per in-ear o monitor in-ear componente usano balanced-armature [https://www.klippel.de/test-objects/balanced-armature-transducer.html](https://www.klippel.de/test-objects/balanced-armature-transducer.html), con misure su T(x), Kms(x), ma non collegati a modelli venduti al consumatore finale.
 
 Si scarica APK Combo Installer dal sito ufficiale perché permette di installare anche altri formati che non siano .apk
 
-Si scarica l’.apk di apk pure e da DENTRO l’applicazione si scarica “Seeker” 
+Si scarica l’.apk di apk pure e da DENTRO l’applicazione si scarica “Seeker”
 
 (mettere qui ragionamenti che è solo un fonte digitale)
 
-Qui tutti i ragionamenti su quello che si trova su una fonte hi-res 
+Qui tutti i ragionamenti su quello che si trova su una fonte hi-res
 
 	Chatgpt (1)
 

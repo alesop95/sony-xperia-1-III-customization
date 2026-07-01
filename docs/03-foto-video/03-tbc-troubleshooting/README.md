@@ -18,7 +18,7 @@ persist.camera.HAL3.enabled: 1
 
 Se il valore è 1, significa che Camera2 API (HAL3) è abilitata.
 
-persist.camera.HAL3.enabled: 1 
+persist.camera.HAL3.enabled: 1
 
 non lo trovo, se faccio getprop | grep camera ottengo:
 
@@ -116,13 +116,13 @@ Questi modder di solito rilasciano anche file XML di configurazione ottimizzati 
 
 Scaricali sempre insieme all’APK e importali come ti ho spiegato (cartella GCam/Configs7/, doppio tap sull’area scatto).
 
-Ho provato a scaricare da APKpure Gcam – Arnova8G2’s Google Camera Port con le seguenti caratteristiche:
+Ho provato a scaricare da APKpure Gcam - Arnova8G2’s Google Camera Port con le seguenti caratteristiche:
 
 1. Version: 8.9.097.540104718.33 (66480026)
 1. Updated: Aug 9, 2023
 1. Download size: 267.41 MB
 
-Si è installata con APKpure ma poi si apre e si richiude subito anche questa. 
+Si è installata con APKpure ma poi si apre e si richiude subito anche questa.
 
 Capisco, la versione Arnova8G2 8.9 che hai provato sembra non funzionare bene sul tuo Xperia 1 III con LineageOS 22.2 su Android 15, probabilmente per incompatibilità tra la mod GCam più recente e la ROM custom.
 
@@ -152,7 +152,7 @@ Ti posso aiutare a settarla per ottenere il massimo in termini di qualità.
 
 Se dopo aver installato GCam 7.3.018 l'app si chiude ancora, potrebbe esserci un problema di compatibilità con LineageOS 22.2 o con le impostazioni del sistema. In tal caso, ti consiglio di considerare l'uso di **Open Camera**, un'app fotocamera open-source che offre molte funzionalità avanzate e supporta il salvataggio in formato RAW.
 
-Urnyx05 GCam 7.3 non lo trovo su apkpure quindi si è provato su [https://www.celsoazevedo.com/files/android/google-camera/dev-urnyx05/f/dl0](https://www.celsoazevedo.com/files/android/google-camera/dev-urnyx05/f/dl0) 
+Urnyx05 GCam 7.3 non lo trovo su apkpure quindi si è provato su [https://www.celsoazevedo.com/files/android/google-camera/dev-urnyx05/f/dl0](https://www.celsoazevedo.com/files/android/google-camera/dev-urnyx05/f/dl0)
 
 E provando sempre ad installare con APKCombo Installer 4.0, l’installazione procede ma poi come sempre andando avanti e dando tutti I permessi si continua a chiudere crashando.
 
@@ -408,15 +408,15 @@ Seleziona: xperia1iii_bsg_8.1.101_FULL_config.xml
 GCam si riavvierà con tutte le impostazioni applicate
 
 Questa configurazione include:
-✅ HDR+ Auto
-✅ RAW per tutte le cam
-✅ Compatibilità Galleria
-✅ Night Sight e Ritratto
-✅ Supporto per tutte le fotocamere (anche frontale)
+ HDR+ Auto
+ RAW per tutte le cam
+ Compatibilità Galleria
+ Night Sight e Ritratto
+ Supporto per tutte le fotocamere (anche frontale)
 
 Ora che hai una **configurazione base potente e stabile**, puoi andare oltre e **personalizzare i dettagli fotografici** per adattarli al tuo stile (più realistico? più vivace? più cinematico?). Ti spiego cosa significano le voci principali e cosa puoi fare **in più**, se vuoi spingere la qualità.
 
-**🔧 Voci principali già attive nella config**
+**Voci principali già attive nella config**
 
 | **Impostazione** | **Significato / Effetto** | **Personalizzabile?** |
 | --- | --- | --- |
@@ -427,37 +427,37 @@ Ora che hai una **configurazione base potente e stabile**, puoi andare oltre e *
 | EnablePortrait | Abilita la modalità Ritratto con sfocato (bokeh) | Sì |
 | GalleryCompat=true | Risolve bug dove non puoi aprire foto direttamente da GCam | Sì |
 
-**🔍 Cosa puoi fare di più? (avanzato ma utile)**
+**Cosa puoi fare di più? (avanzato ma utile)**
 
-**1. 🎨 Modificare colori / saturazione / contrasto**
+**1.  Modificare colori / saturazione / contrasto**
 
 Vuoi foto più vivide? più neutre?
 Queste modifiche si fanno nei **"Lib Patcher"** di GCam, solo da interfaccia (non da XML), nella sezione:
 
-⚙️ Impostazioni Avanzate > Lib Patcher
+ Impostazioni Avanzate > Lib Patcher
 (es. cambiare Saturation, Highlight, Shadow, Sharpness)
 
-**2. 📷 Forzare la lente giusta (wide, ultra, tele)**
+**2.  Forzare la lente giusta (wide, ultra, tele)**
 
 A volte GCam non switcha correttamente. Puoi forzare le 3 lenti:
 
-⚙️ Impostazioni > Avanzate > Auxiliary cameras
+ Impostazioni > Avanzate > Auxiliary cameras
 Attiva: Enable Aux Cameras
 Poi puoi accedere a tutte le 3 lenti dallo switch in alto
 
-**3. 🧪 Provare HDR Enhanced**
+**3.  Provare HDR Enhanced**
 
 Molto più dettagliato dell’HDR normale (ma più lento):
 
-⚙️ Modalità HDR+ > HDR+ Enhanced
+ Modalità HDR+ > HDR+ Enhanced
 (attivabile nella schermata principale GCam, se configurato nel config XML)
 
-**4. ✨ Night Sight con Astrophotography**
+**4.  Night Sight con Astrophotography**
 
-Vuoi scattare le stelle? Attiva Astrophotography Mode (tieni fermo per 2–3s in Night Mode)
+Vuoi scattare le stelle? Attiva Astrophotography Mode (tieni fermo per 2-3s in Night Mode)
 Deve essere **attivata nel config** o da interfaccia:
 
-⚙️ Night Sight > Forza Astro Mode
+ Night Sight > Forza Astro Mode
 
 **Vuoi che ti creo un nuovo file XML con:**
 
@@ -477,28 +477,28 @@ Perfetto! Visto che vuoi uno stile **naturale**, adatto a **vacanze e ricordi**,
 
 Perfetto! Visto che vuoi uno stile **naturale**, adatto a **vacanze e ricordi**, ho già preparato per te un file XML completo che include **tutte le funzionalità extra** (RAW, HDR+ Enhanced, Night Sight, Astrophotography, compatibilità galleria, uso delle 3 lenti, fotocamera frontale) con **tone mapping naturale**, bilanciato e adatto a paesaggi, ritratti e situazioni di viaggio.
 
-👇 Scaricalo qui:
+ Scaricalo qui:
 
-🔗 xperia1iii_bsg_8.1.101_FULL_natural_vacation.xml
+ xperia1iii_bsg_8.1.101_FULL_natural_vacation.xml
 
-**✅ Cosa include questo XML:**
+**Cosa include questo XML:**
 
 | **Funzione** | **Stato** |
 | --- | --- |
-| 🎨 Colore naturale | ✅ Attivo (tone mapping soft e realistico) |
-| 📸 HDR+ Enhanced | ✅ Per dettagli massimi |
-| 🌙 Night Sight + Astro | ✅ Per scatti notturni e cieli stellati |
-| 📷 RAW | ✅ File .DNG per ogni scatto (se vuoi editarli) |
-| 🧠 Compatibilità Galleria | ✅ Non ti blocca l'accesso alla preview |
-| 🔁 3 lenti attive | ✅ Wide, Ultrawide, Tele |
-| 🤳 Front camera | ✅ Funzionante e con Portrait Mode |
-| 🗂️ Salvataggio stabile | ✅ Nessun errore di percorso |
+|  Colore naturale |  Attivo (tone mapping soft e realistico) |
+|  HDR+ Enhanced |  Per dettagli massimi |
+|  Night Sight + Astro |  Per scatti notturni e cieli stellati |
+|  RAW |  File .DNG per ogni scatto (se vuoi editarli) |
+|  Compatibilità Galleria |  Non ti blocca l'accesso alla preview |
+|  3 lenti attive |  Wide, Ultrawide, Tele |
+|  Front camera |  Funzionante e con Portrait Mode |
+|  Salvataggio stabile |  Nessun errore di percorso |
 
 Però vorrei poter selezionare la possibilità di salvare .dng o no altrimenti mi si intasa subito la memoria perchè i raw pesano moltissimo
 
-Ottimo punto! Hai perfettamente ragione: i file RAW (.DNG) pesano anche 10–20 MB ciascuno e **non sempre servono**, soprattutto per le foto “ricordo” più casuali.
+Ottimo punto! Hai perfettamente ragione: i file RAW (.DNG) pesano anche 10-20 MB ciascuno e **non sempre servono**, soprattutto per le foto “ricordo” più casuali.
 
-**✅ Soluzione ideale: ti creo un nuovo XML**
+**Soluzione ideale: ti creo un nuovo XML**
 
 Con:
 
@@ -512,7 +512,7 @@ Usare GCam in modo leggero e veloce
 
 E attivare il salvataggio RAW solo **quando fai uno scatto importante** da modificare più avanti (tipo un tramonto o un monumento).
 
-**📸 Come attivare/disattivare RAW a mano in GCam:**
+**Come attivare/disattivare RAW a mano in GCam:**
 
 Se il tuo modulo GCam lo supporta, dopo il mio aggiornamento potrai fare così:
 
@@ -526,13 +526,13 @@ Procedo ora con il file XML aggiornato senza RAW di default. Un attimo e te lo p
 
 Eccolo! Ora hai la versione **senza RAW attivo di default**, per risparmiare memoria durante le vacanze:
 
-📦 Scarica xperia1iii_bsg_8.1.101_natural_vacation_NO_RAW.xml
+ Scarica xperia1iii_bsg_8.1.101_natural_vacation_NO_RAW.xml
 
 Come sempre:
 
 Salva in GCam/Configs8/
 
-	Da “files” come applicazione android creare semplicemente la cartella dentro lì (e approvare “management of all files” dalle impostazioni dell’app – tutto spiegato anche in Celso nella sezione “Gcam Hub”
+	Da “files” come applicazione android creare semplicemente la cartella dentro lì (e approvare “management of all files” dalle impostazioni dell’app - tutto spiegato anche in Celso nella sezione “Gcam Hub”
 
 Doppio tap nello spazio nero in GCam → seleziona il file XML
 
@@ -542,18 +542,18 @@ Potrai attivare RAW solo quando vuoi dalle impostazioni GCam
 
 serve a **regolare il modo in cui GCam gestisce i colori, il contrasto e la luminosità finale** delle foto. In pratica è ciò che definisce “lo stile” delle immagini.
 
-**🎨 Cosa fa ToneMapping = natural?**
+**Cosa fa ToneMapping = natural?**
 
-✅ **Colore realistico**
+ **Colore realistico**
 Riduce la saturazione eccessiva (tipica di molte fotocamere stock), restituendo colori fedeli alla scena reale: perfetto per paesaggi, pelle, cibo, ecc.
 
-✅ **Contrasto più morbido**
+ **Contrasto più morbido**
 Evita neri troppo schiacciati o luci bruciate, mantenendo dettagli sia nelle ombre che nelle alte luci.
 
-✅ **Perfetto per ricordi di viaggio**
+ **Perfetto per ricordi di viaggio**
 Ti dà una foto già bella e bilanciata **senza doverla ritoccare**, né temere un effetto “finto Instagram”.
 
-**🔁 Altri esempi di ToneMapping (solo per confronto):**
+**Altri esempi di ToneMapping (solo per confronto):**
 
 "vivid" = Colori pompati e forti, più “social” ma meno fedeli
 
@@ -561,7 +561,7 @@ Ti dà una foto già bella e bilanciata **senza doverla ritoccare**, né temere 
 
 "contrast" = Aumenta impatto visivo, ma può bruciare dettagli
 
-Mandata una mail 
+Mandata una mail
 
 | da: | **Alessio Sopranzi** <alessio.sopranzi.95@gmail.com> |
 | --- | --- |
@@ -570,7 +570,7 @@ Mandata una mail
 | oggetto: | xperia1iii_bsg_8.1.101_natural_vacation_NO_RAW.xml |
 | proveniente da: | gmail.com |
 
-Per mandare il file .xml sul telefono a quella mail temporanea che si auto-distrugge ma il file non si scarica ma con [https://www.transferxl.com/manage/08jpJn8v5RNMjc/](https://www.transferxl.com/manage/08jpJn8v5RNMjc/) 
+Per mandare il file .xml sul telefono a quella mail temporanea che si auto-distrugge ma il file non si scarica ma con [https://www.transferxl.com/manage/08jpJn8v5RNMjc/](https://www.transferxl.com/manage/08jpJn8v5RNMjc/)
 
 Estratto il file nella sottocartella di configurazione
 
@@ -588,7 +588,7 @@ Non riesci a visualizzare le foto scattate dentro la GCam (galleria integrata o 
 
 **Proviamo insieme alcune soluzioni specifiche per il tuo problema:**
 
-**1. Frontale che non scatta foto — fix comuni**
+**1. Frontale che non scatta foto - fix comuni**
 
 **a)** Prova a disabilitare l’HDR per la frontale
 Nel file XML, modifica o aggiungi nella sezione frontale:
@@ -611,31 +611,31 @@ Nonho neanche la possibilità di switchare tra le tre lenti, c'è qualcosa che n
 
 Se:
 
-✅ I permessi ora sono corretti
+ I permessi ora sono corretti
 
-❌ Non riesci a passare tra le **3 fotocamere (wide, tele, ultrawide)**
+ Non riesci a passare tra le **3 fotocamere (wide, tele, ultrawide)**
 
-❌ La **frontale funziona solo in video**
+ La **frontale funziona solo in video**
 
-❌ La GCam si comporta in modo limitato
+ La GCam si comporta in modo limitato
 
 … allora molto probabilmente il problema è **di compatibilità tra il mod GCam scelto e la tua versione LineageOS** (22.2 Android 15 su Xperia 1 III).
 
-**🔍 Diagnosi: Perché non vedi le 3 lenti?**
+**Diagnosi: Perché non vedi le 3 lenti?**
 
 GCam, per funzionare **con tutte le fotocamere**, ha bisogno che:
 
-🔧 La tua ROM esponga correttamente i sensori al sistema (Camera2 API completa per ogni lente)
+ La tua ROM esponga correttamente i sensori al sistema (Camera2 API completa per ogni lente)
 
-✅ Il mod GCam **riconosca** quei sensori
+ Il mod GCam **riconosca** quei sensori
 
-📄 Il **config XML** attivi correttamente le opzioni multi-camera
+ Il **config XML** attivi correttamente le opzioni multi-camera
 
 Su **ROM ufficiali Sony**, la camera app Sony può farlo perfettamente. Su **LineageOS**, spesso solo la lente principale (wide) è pienamente compatibile, mentre tele/ultrawide richiedono patch o una **GCam "moddata" specifica**.
 
-**✅ Soluzioni concrete**
+**Soluzioni concrete**
 
-**1. ✅ Confermiamo i sensori visibili con ADB:**
+**1.  Confermiamo i sensori visibili con ADB:**
 
 Se hai ADB attivo, collega il telefono e digita da terminale:
 
@@ -649,17 +649,17 @@ Questo ti dirà quali **ID fotocamera** sono esposti (di solito: 0 = main, 1 = f
 
 Se ne vedi **solo 2**, è un problema del sistema.
 
-**2. ✅ Prova un altro mod GCam con multi-camera compatibile**
+**2.  Prova un altro mod GCam con multi-camera compatibile**
 
 Ti consiglio questo mod di **Greatness**, noto per gestire bene sensori multipli:
 
-📦 GCam Greatness 8.4
+ GCam Greatness 8.4
 
 Versione consigliata: GCam_8.4.600_Wichaya_V1.4_Greatness.apk
 
 Provalo **senza config iniziale**: solo per verificare se mostra le 3 lenti nel selettore.
 
-**3. ✅ Usa Open Camera (temporaneamente)**
+**3.  Usa Open Camera (temporaneamente)**
 
 Se GCam continua a non riconoscere le 3 lenti, **Open Camera** ti permette almeno di:
 
@@ -669,12 +669,12 @@ Passare da lente wide → tele → ultrawide (se la ROM supporta Camera2 per cia
 
 Ma dovresti attivare:
 
-⚙️ Impostazioni → Fotocamera API → Camera2 API
-⚙️ “ID fotocamera” → scegli manualmente tra 0, 1, 2 per cambiare lente
+ Impostazioni → Fotocamera API → Camera2 API
+ “ID fotocamera” → scegli manualmente tra 0, 1, 2 per cambiare lente
 
 Non ho capito il punto 1, posso fare da termux?
 
-Ottima domanda! ✅ **Sì, puoi fare anche da Termux**, senza bisogno del PC.
+Ottima domanda!  **Sì, puoi fare anche da Termux**, senza bisogno del PC.
 
 Ecco come **verificare quante fotocamere vede davvero il sistema** (cioè LineageOS), usando Termux sul tuo Sony Xperia 1 III.
 
@@ -715,13 +715,13 @@ Physical camera id: ...
 | 2 | BACK | Tele o ultrawide |
 | 3 | BACK | Tele o ultrawide (l'altra) |
 
-**🛠️ Se mancano ID:**
+**Se mancano ID:**
 
 Probabile che la tua build LineageOS:
 
-❌ **Non espone tutte le camere alla HAL Camera2**
+ **Non espone tutte le camere alla HAL Camera2**
 
-✅ Soluzione possibile → **modificare il media_profiles.xml** o **usare un altro kernel/ROM o patch**
+ Soluzione possibile → **modificare il media_profiles.xml** o **usare un altro kernel/ROM o patch**
 
 Non mi dà nessun output il tuo comando, letteralmente nulla, termux torna ad essere ~ $
 
@@ -729,7 +729,7 @@ Non mi dà nessun output il tuo comando, letteralmente nulla, termux torna ad es
 
 Perfetto, grazie per aver provato. Il fatto che **non restituisca nulla** indica una delle seguenti situazioni:
 
-**❗Possibili cause:**
+**Possibili cause:**
 
 **Non hai dato i permessi root (su)**
 → Senza root, dumpsys media.camera a volte non restituisce nulla o è limitato.
@@ -740,7 +740,7 @@ Perfetto, grazie per aver provato. Il fatto che **non restituisca nulla** indica
 **ROM LineageOS non espone correttamente i sensori Camera2**
 → E quindi non risultano visibili dal sistema stesso (nemmeno a livello basso).
 
-**✅ Proviamo una verifica alternativa: getprop**
+**Proviamo una verifica alternativa: getprop**
 
 In Termux, prova questo comando invece:
 
@@ -768,7 +768,7 @@ CopiaModifica
 
 ... significa che Camera2 API **è teoricamente attiva**, ma non garantisce che **tutti i sensori siano esposti**.
 
-**❗Possibili cause:**
+**Possibili cause:**
 
 **Non hai dato i permessi root (su)**
 → Senza root, dumpsys media.camera a volte non restituisce nulla o è limitato.
@@ -779,7 +779,7 @@ CopiaModifica
 **ROM LineageOS non espone correttamente i sensori Camera2**
 → E quindi non risultano visibili dal sistema stesso (nemmeno a livello basso).
 
-**✅ Soluzione alternativa: Open Camera per test lenti manualmente**
+**Soluzione alternativa: Open Camera per test lenti manualmente**
 
 Dal momento che **GCam non ti fa cambiare lente**, la cosa più rapida da fare ora è:
 
@@ -787,11 +787,11 @@ Dal momento che **GCam non ti fa cambiare lente**, la cosa più rapida da fare o
 
 Vai su:
 
-⚙️ Impostazioni → Fotocamera API → **Camera2 API**
+ Impostazioni → Fotocamera API → **Camera2 API**
 
 Vai in:
 
-⚙️ Impostazioni → Seleziona fotocamera → Ti appariranno probabilmente:
+ Impostazioni → Seleziona fotocamera → Ti appariranno probabilmente:
 
 Camera ID: 0 → Wide
 
@@ -801,7 +801,7 @@ Camera ID: 3 → Ultrawide
 
 Camera ID: 1 → Frontale
 
-👉 Se riesci a scattare con tutte e 3 le lenti in Open Camera, **la tua ROM le supporta**, ma GCam **non le riconosce** (va configurata con logical_camera o un mod specifico).
+ Se riesci a scattare con tutte e 3 le lenti in Open Camera, **la tua ROM le supporta**, ma GCam **non le riconosce** (va configurata con logical_camera o un mod specifico).
 
 **Se vuoi, posso:**
 
@@ -809,21 +809,21 @@ Prestarti un XML specifico con camera.switch_mode per forzare le lenti
 
 Guidarti a provare un'altra GCam modmulti che rileva manualmente i sensori
 
-Ma prima, fammi sapere se in **Open Camera riesci a scattare da tutte e 3 le lenti**: questo ci dà la conferma tecnica definitiva 💡
+Ma prima, fammi sapere se in **Open Camera riesci a scattare da tutte e 3 le lenti**: questo ci dà la conferma tecnica definitiva
 
 Scarica pure **Open Camera** da APKPure, è un’ottima scelta soprattutto se vuoi testare le fotocamere senza dipendere da Play Store o Google Services.
 
-Scaricando opencamera sono poi andato su Impostazioni → Fotocamera API → Camera2 API e ho selezionato “Select Camera2 API to enable extra features such as manual modes for exposure, focus, white balance, along with RAW (if supported by the device). Changing the API will cause a restart. 
+Scaricando opencamera sono poi andato su Impostazioni → Fotocamera API → Camera2 API e ho selezionato “Select Camera2 API to enable extra features such as manual modes for exposure, focus, white balance, along with RAW (if supported by the device). Changing the API will cause a restart.
 
 Adesso sullo schermo è apparsa (oltre all’ora) un “ID:0” e la ISO con “1/30s”, se cambio alla fotocamera frontale funziona e mi compare infatti “ID: 1” (ma senza la ISO con “1/30s”). Non ho comunque capito dove si può cambiare la ID per quella frontale
 
-Ottimo, stai facendo esattamente il giusto percorso! 🎯 Open Camera mostra l’**ID della fotocamera attualmente in uso**, e il fatto che tu veda ID: 0 (posteriore) e ID: 1 (anteriore) significa che almeno **due fotocamere sono correttamente esposte** via Camera2 API.
+Ottimo, stai facendo esattamente il giusto percorso!  Open Camera mostra l’**ID della fotocamera attualmente in uso**, e il fatto che tu veda ID: 0 (posteriore) e ID: 1 (anteriore) significa che almeno **due fotocamere sono correttamente esposte** via Camera2 API.
 
-Allora io ho un’iconcina a forma di macchinetta con il “+” proprio appena si apre l’app che mi permette di andare su un menu con scritto 
+Allora io ho un’iconcina a forma di macchinetta con il “+” proprio appena si apre l’app che mi permette di andare su un menu con scritto
 
 “Choose camera:
 
-0: Back Camera (Auto Lens) – attualmente selezionata
+0: Back Camera (Auto Lens) - attualmente selezionata
 
 	E sotto a questo “0:” ho
 
@@ -841,9 +841,9 @@ Allora io ho un’iconcina a forma di macchinetta con il “+” proprio appena 
 
 5: Back Camera
 
-E un piccolo info che dice “By default, a camera uses Auto Lens selection, which  means the zoom level controls which lens is used. However this menu also allows you to explicitly choose which lens is being used”. 
+E un piccolo info che dice “By default, a camera uses Auto Lens selection, which  means the zoom level controls which lens is used. However this menu also allows you to explicitly choose which lens is being used”.
 
-Posso switchare tra 
+Posso switchare tra
 
 Lens 0: Ultra-wide, 93° x 77°
 
@@ -853,9 +853,9 @@ Lens 0: Ultra-wide, 93° x 77°
 
 Correttamente e mi funzionano tutte e tre
 
-Perfetto! 🔥 Hai appena confermato una cosa **fondamentale**:
+Perfetto!  Hai appena confermato una cosa **fondamentale**:
 
-**✅ Tutte e 3 le lenti posteriori del tuo Xperia 1 III funzionano perfettamente sotto Camera2 API**
+**Tutte e 3 le lenti posteriori del tuo Xperia 1 III funzionano perfettamente sotto Camera2 API**
 
 Significa che:
 
@@ -865,15 +865,15 @@ La ROM LineageOS che stai usando **espone correttamente tutti i sensori**
 
 Hai la possibilità di sfruttare **RAW, controlli manuali e tutte le lenti** su app compatibil
 
-**📷 Come usare questo nel modo migliore:**
+**Come usare questo nel modo migliore:**
 
-**✅ Se usi Open Camera**
+**Se usi Open Camera**
 
 Puoi scegliere la lente **manualmente** come hai appena fatto (perfetto per chi vuole qualità e controllo)
 
 Puoi attivare il salvataggio in **RAW + JPEG** qui:
 
-⚙️ Impostazioni → **Photo Settings** → **RAW** → ✅ Enable RAW (DNG)
+ Impostazioni → **Photo Settings** → **RAW** →  Enable RAW (DNG)
 
 Se vuoi evitare di intasare la memoria:
 
@@ -881,7 +881,7 @@ Tieni il RAW **disattivato di default**
 
 Attivalo solo quando vuoi scatti di altissima qualità da elaborare dopo
 
-**✅ Se vuoi comunque provare GCam (opzionale ora)**
+**Se vuoi comunque provare GCam (opzionale ora)**
 
 Ora che sappiamo che le lenti funzionano, potresti **usare una GCam Mod Multilens compatibile** come:
 
@@ -899,13 +899,13 @@ toni naturali e file DNG opzionali
 
 Posso crearti un XML **ottimizzato per vacanza e qualità**, e caricartelo con un metodo semplice da scaricare.
 
-**✨ Riepilogando:**
+**Riepilogando:**
 
-✔ Hai confermato che **wide, ultrawide e tele** funzionano
+ Hai confermato che **wide, ultrawide e tele** funzionano
 
-✔ Puoi usare Open Camera per fare RAW, zoom ottico e belle foto senza complicazioni
+ Puoi usare Open Camera per fare RAW, zoom ottico e belle foto senza complicazioni
 
-✔ Se vuoi, puoi migliorare ancora con GCam + XML che ti preparo io
+ Se vuoi, puoi migliorare ancora con GCam + XML che ti preparo io
 
 CONTINUA DA CHATGPT
 

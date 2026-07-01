@@ -1,6 +1,6 @@
 # Ripping
 
-Rippare significa estrarre i dati audio da una fonte fisica (come un CD o un SACD) per convertirli in un file digitale. Nel caso di un CD, si estrae il flusso audio PCM a 16 bit/44.1 kHz, creando un file WAV o FLAC. Nel caso di un SACD (che usa tecnologia DSD), si può “rippare” il layer DSD e poi convertirlo in PCM per un file FLAC 24-bit/88.2 o 96 kHz. Dunque to rip means copying the original audio content in a digital format without any loss  (lossless). 
+Rippare significa estrarre i dati audio da una fonte fisica (come un CD o un SACD) per convertirli in un file digitale. Nel caso di un CD, si estrae il flusso audio PCM a 16 bit/44.1 kHz, creando un file WAV o FLAC. Nel caso di un SACD (che usa tecnologia DSD), si può “rippare” il layer DSD e poi convertirlo in PCM per un file FLAC 24-bit/88.2 o 96 kHz. Dunque to rip means copying the original audio content in a digital format without any loss  (lossless).
 
 ![](assets/img-0004.png)
 
@@ -18,7 +18,7 @@ Notice that if you strip off all the bits below 16 (i.e. 96 dB), there is no con
 
 The bottom line is that to prevent filter distortions, while you can't hear it, you need to transmit at a higher frequency than 40 kHz for the highest quality. But by using 14 bits instead of 16, you can usually get away with standard CD 44.1/16
 
-Also, lossless compression techniques will reduce the file to about half its size 
+Also, lossless compression techniques will reduce the file to about half its size
 
 A cd frequecy response is 20Hz to 20kHz at 44.1kHz sampling frequency. At 20 Hz , there are 2205 samples for each complete sine wave of audio. As frequency increases, the number of samples for each complete sine wave gets lower. At 2kHz , there are 22.5 samples per complete sine wave. At 20 kHz , there are about 2.2 samples per complete sine wave, and it produces a square wave which needs heavy filtering to round off the edges of the square, making a sine.
 

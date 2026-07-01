@@ -40,6 +40,6 @@ E il supporto hardware è presente attivo. Inoltre, per la build specifica Build
 - CONFIG_USB_OTG_FSM=y
 - Supporto per usb-host attivo
 
-Dunque, il kernel LineageOS ufficiale per questo dispositivo include il supporto OTG. Si possono anche semplicemente usare app come USB OTG Checker (di JWork – nome pacchetto consigliato “com.faitaujapon”) o USB Host Diagnostics (di Chainfire). Queste verificano la presenza del supporto OTG a livello kernel e API.
+Dunque, il kernel LineageOS ufficiale per questo dispositivo include il supporto OTG. Si possono anche semplicemente usare app come USB OTG Checker (di JWork - nome pacchetto consigliato “com.faitaujapon”) o USB Host Diagnostics (di Chainfire). Queste verificano la presenza del supporto OTG a livello kernel e API.
 
 Controllando con USB OTG Checker si accede ad una schermata in cui dice “ANDROID COMPATIBLE USB OTG”.

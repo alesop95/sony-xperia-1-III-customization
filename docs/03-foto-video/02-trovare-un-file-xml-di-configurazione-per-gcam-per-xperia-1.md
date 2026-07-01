@@ -2,8 +2,6 @@
 
 > LEGACY - percorso GCam, abbandonato in favore delle app proprietarie Sony. Conservato come riferimento storico. Per il percorso attuale vedi `../RUNBOOK.md`.
 
-Aaa
-
 **2. Trovare un file XML di configurazione per GCam per Xperia 1 III (pdx215)**
 
 Dai forum come XDA e Reddit, spesso modder rilasciano file XML ottimizzati. Per il tuo modello:

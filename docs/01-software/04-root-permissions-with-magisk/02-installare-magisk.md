@@ -6,11 +6,11 @@ Per installare Magisk serve **bootloader sbloccato** (cosa che *hai già fatto*,
 - Oppure direttamente da recovery personalizzata (es. TWRP, Lineage Recovery)
    - La scelta più semplice per lo specifico caso di installare Magisk è Lineage Recovery
 
-Si avvia poi il sistema e si installa Magisk App. L’app gestisce poi tutto: root, moduli, aggiornamenti. 
+Si avvia poi il sistema e si installa Magisk App. L’app gestisce poi tutto: root, moduli, aggiornamenti.
 
 ## fastboot flash + boot patching (aborted)
 
-Si sblocca il bootloader (l’hai già fatto per LineageOS) e si connette il telefono al PC in modalità fastboot. Prima si flasha la recovery di Magisk temporanea per patchare il boot, poi si avvia nel sistema, si apre Magisk App e si completa l’installazione. 
+Si sblocca il bootloader (l’hai già fatto per LineageOS) e si connette il telefono al PC in modalità fastboot. Prima si flasha la recovery di Magisk temporanea per patchare il boot, poi si avvia nel sistema, si apre Magisk App e si completa l’installazione.
 
 Questo ha il vantaggio di essere un approccio più pulito, systemless, con meno rischi. Tuttavia, procedere con il metodo via recovery personalizzata in questo caso è più lineare perché:
 
@@ -21,7 +21,7 @@ Questo metodo è più semplice, non richiede un PC con comandi fastboot complica
 
 ## Da recovery personalizzata
 
-Con LineageOS si può utilizzare Lineage Recovery, quindi già pronto o facilmente installabile e non serve  né il PC né comandi fastboot avanzati. 
+Con LineageOS si può utilizzare Lineage Recovery, quindi già pronto o facilmente installabile e non serve  né il PC né comandi fastboot avanzati.
 
 - Da recovery si può flashare direttamente il pacchetto Magisk .zip
 - Riavvii ed è pronto
@@ -43,9 +43,7 @@ Per arrivare a TWRP su Xperia 1 III (pdx215) serve oltre al bootloader sbloccato
 
 ### Verifica slot attivo e backup minimi essenziali PRIMA di TWRP
 
-Aaaa
-
-Prima di eseguire il comando fastboot --set-active=other che verrà visto in seguito, è intelligente effettuare i backup minimi essenziali PRIMA di flashare TWRP li fai da PC, NON da TWRP. 0Innanzitutto, serve salvare almeno tre partizioni. 
+Prima di eseguire il comando fastboot --set-active=other che verrà visto in seguito, è intelligente effettuare i backup minimi essenziali PRIMA di flashare TWRP li fai da PC, NON da TWRP. 0Innanzitutto, serve salvare almeno tre partizioni.
 
 fastboot getvar current-slot
 
@@ -59,15 +57,15 @@ fastboot flash dtbo dtbo_a.img
 
 Salva questi file PRIMA di flashare qualsiasi cosa.
 
-**📥 Come si fa a salvarli?**
+**Come si fa a salvarli?**
 
 Devi estrarre le partizioni attuali (puoi scaricarle da LineageOS ufficiale o fare il dump tu con dd via adb/fastboot, ma è più comodo scaricarle già pronte).
 
-Non si vuole flashare TWRP sullo slot attivo, ma si vuole **flashare TWRP sullo slot passivo** per mantenere integro il sistema attivo, e prima fare un **backup “minimo vitale” delle partizioni di avvio**. In questo senso si vuole flashare TWRP su quello passivo e conservare quello attivo come backup. 
+Non si vuole flashare TWRP sullo slot attivo, ma si vuole **flashare TWRP sullo slot passivo** per mantenere integro il sistema attivo, e prima fare un **backup “minimo vitale” delle partizioni di avvio**. In questo senso si vuole flashare TWRP su quello passivo e conservare quello attivo come backup.
 
 **Flashare TWRP nello slot passivo (es. b)**, lasciando intatto il tuo LineageOS nello slot attivo (es. a), e fare un **backup delle partizioni di boot del tuo slot attivo**, così in caso di problemi puoi sempre ripristinarle.
 
-Questo mi permette comunque di ripristinare il mio telefono esattamente com'era perchè i dati comunque sono conservati sul dispositivo?  ✅ **Sì**, se lasci intatto lo **slot attivo** (es. a) e **flashi solo nello slot passivo** (b), **i tuoi dati, app e sistema rimangono intatti**. Il backup delle partizioni serve solo a **ripristinare l’avvio**, non i dati (che restano dove sono).
+Questo mi permette comunque di ripristinare il mio telefono esattamente com'era perchè i dati comunque sono conservati sul dispositivo?   **Sì**, se lasci intatto lo **slot attivo** (es. a) e **flashi solo nello slot passivo** (b), **i tuoi dati, app e sistema rimangono intatti**. Il backup delle partizioni serve solo a **ripristinare l’avvio**, non i dati (che restano dove sono).
 
 I backup minimi essenziali PRIMA di flashare TWRP li fai da PC, NON da TWRP. 0Innanzitutto, serve salvare almeno tre partizioni come visto nella sezione relativa al backup del boot dello slot attivo via fastboot.
 
@@ -83,7 +81,7 @@ Bisogna poi aprire il terminale nella cartella platform-tools con un terminale n
 
 	fastboot --set-active=other
 
-Questo perché quando si flasha qualcosa nella partizione boot, è meglio farlo nello slot passivo, così se qualcosa va storto si può sempre tornare allo slot attivo. In questo caso è per flashare TWRP nello slot opposto per sicurezza così si può testare TWRP e tornare indietro. Quindi per capire, si sta impostando lo slot “other”, si flasha poi TWRP (prossimo comando) e poi si avvia in recovery e se tutto funziona si può rimanere lì altrimenti se qualcosa non va si può forzare il boot dallo slot precedente. Dopo aver switchato da Slot A a Slot B (con fastboot --set-active=other), e installato TWRP o Magisk, si può continuare ad usare normalmente Android dallo Slot B. LineageOS è installato su entrambi gli slot oppure soltanto su uno in base alle azioni fatte in passato. Entrare nello slot alternativo permette LI’ dentro di flashare Magisk, fare backup e avviare Android da lì e QUELLO diventerà il sistema attivo con LineageOS + Magisk + TWRP se lì però LineageOS c’è. Posso usare lo slot B (dopo lo switch) solo se LineageOS è installato lì – vedere anche sezione where is LineageOS installed?. In questo senso può non essere mai necessario tornare allo Slot A perché se tutto funziona (con LineageOS che parte e TWRP che è accessibile) si può continuare ad usare lo slot alternativo come normale, ricevere aggiornamenti che verranno scritti su slot A e aggiornare Lineage OS via recovery come sempre. 
+Questo perché quando si flasha qualcosa nella partizione boot, è meglio farlo nello slot passivo, così se qualcosa va storto si può sempre tornare allo slot attivo. In questo caso è per flashare TWRP nello slot opposto per sicurezza così si può testare TWRP e tornare indietro. Quindi per capire, si sta impostando lo slot “other”, si flasha poi TWRP (prossimo comando) e poi si avvia in recovery e se tutto funziona si può rimanere lì altrimenti se qualcosa non va si può forzare il boot dallo slot precedente. Dopo aver switchato da Slot A a Slot B (con fastboot --set-active=other), e installato TWRP o Magisk, si può continuare ad usare normalmente Android dallo Slot B. LineageOS è installato su entrambi gli slot oppure soltanto su uno in base alle azioni fatte in passato. Entrare nello slot alternativo permette LI’ dentro di flashare Magisk, fare backup e avviare Android da lì e QUELLO diventerà il sistema attivo con LineageOS + Magisk + TWRP se lì però LineageOS c’è. Posso usare lo slot B (dopo lo switch) solo se LineageOS è installato lì - vedere anche sezione where is LineageOS installed?. In questo senso può non essere mai necessario tornare allo Slot A perché se tutto funziona (con LineageOS che parte e TWRP che è accessibile) si può continuare ad usare lo slot alternativo come normale, ricevere aggiornamenti che verranno scritti su slot A e aggiornare Lineage OS via recovery come sempre.
 
 Dunque, per fare il flash:
 
@@ -99,13 +97,13 @@ Per avviare direttamente nella recovery per non sovrascriverla. Questo fa partir
 
 Poi *telefono spento* → premi **Volume Giù + Power** per entrare in TWRP
 
-Se si vede l’interfaccia Touch (Install, backup, Wipe, Advanced) e si vede qualcosa come [https://github.com/sonybasement/twrp_android_sony_pdx215](https://github.com/sonybasement/twrp_android_sony_pdx215) significa che funziona tutto. 
+Se si vede l’interfaccia Touch (Install, backup, Wipe, Advanced) e si vede qualcosa come [https://github.com/sonybasement/twrp_android_sony_pdx215](https://github.com/sonybasement/twrp_android_sony_pdx215) significa che funziona tutto.
 
 Riavvii in Android
 
-👉 Se funziona tutto → resti tranquillamente su B
+ Se funziona tutto → resti tranquillamente su B
 
-👉 Se non funziona → torni allo slot A con un comando
+ Se non funziona → torni allo slot A con un comando
 
 Se qualcosa non parte, bisogna rientrare in fastboot e switchare di nuovo sullo slot con il sistema operativo funzionante:
 
@@ -116,8 +114,6 @@ Questo è *obbligatorio* se LineageOS non parte dopo il flash, TWRP non funziona
 In altre parole, in generale, si potrebbe usare lo slot B anche se LineageOS è installato solo nello slot A purchè vengano copiati manualmente boot + system anche nello slot B oppure verificare se sono già lì (cosa che ti spiego sotto). Se non lo fai e attivi lo slot B a caso → il telefono potrebbe non avviarsi dopo il riavvio. MA NON È UN PROBLEMA: torni in fastboot e dici fastboot --set-active=a per riprendere da dove eri. Niente panico.
 
 ### Uso di TWRP per backup completo (Nandroid backup)
-
-Aaaa
 
 In TWRP, fai un **backup Nandroid** completo (è nelle opzioni Backup). Quindi una volta in TWRP, vai su:
 
@@ -131,8 +127,6 @@ In caso di problemi:
 Avvia TWRP
 
 Vai su **Restore** → scegli il backup e ripristina
-
-Aaa
 
 Se tutto è a posto, continui con … Magisk
 
@@ -151,8 +145,6 @@ Vai su **Install**, selezioni Magisk-v##.zip, e swipe per installare
 Riavvia nel sistema e applicazione Magisk sarà pronta
 
 #### Magisk .zip + apk aggiornato
-
-Aaaa
 
   Guida passo-passo per flash sotto TWRP
 
@@ -180,12 +172,12 @@ adb sideload Magisk-v26.4.zip
 
 1. Riavviare il sistema. A questo punto l'app Magisk sarà visibile e il root attivo.
 
-Il metodo è testato e stabile su **Lineage Recovery**, a patto che la build supporti init.d o init.rc patchabili. Alcune versioni di LineageOS (o Recovery) limitano o rendono non modificabili questi script per motivi di sicurezza o stabilità. In quei casi, Magisk non riesce a eseguire il root correttamente perché SELinux è troppo restrittivo. 
+Il metodo è testato e stabile su **Lineage Recovery**, a patto che la build supporti init.d o init.rc patchabili. Alcune versioni di LineageOS (o Recovery) limitano o rendono non modificabili questi script per motivi di sicurezza o stabilità. In quei casi, Magisk non riesce a eseguire il root correttamente perché SELinux è troppo restrittivo.
 
 Con la versione LineageOS 22.2-20250701-NIGHTLY-pdx215 Magisk ha bisogno di patchare script di avvio (init.d o init.rc) per avviare i suoi servizi (root, moduli, Zygisk). SELinux e il sistema di sicurezza Android possono impedire di scrivere o eseguire questi script. In alcune versioni di LineageOS, soprattutto NIGHTLY, SELinux è più restrittivo, e blocca le modifiche. Bisogna quindi controllare DOPO aver installato MAgisk:
 
-- Se dopo il reboot Magisk funziona e vedi lo status verde (root attivo) ➜ tutto OK.
-- Se Magisk è installato ma non ottieni root, o i moduli non funzionano ➜ SELinux sta impedendo le modifiche a init.d/init.rc.
+- Se dopo il reboot Magisk funziona e vedi lo status verde (root attivo)  tutto OK.
+- Se Magisk è installato ma non ottieni root, o i moduli non funzionano  SELinux sta impedendo le modifiche a init.d/init.rc.
 
 In questo caso bisogna attuare una soluzione alternativa:
 
@@ -194,4 +186,3 @@ In questo caso bisogna attuare una soluzione alternativa:
 - fastboot flash boot_a magisk-patched.img
 - fastboot flash boot_b magisk-patched.img
 
-aaa

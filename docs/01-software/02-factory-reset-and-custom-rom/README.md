@@ -25,7 +25,7 @@ Ma NON tocca il sistema operativo (la ROM installata). Dunque, se si installa Li
 | Impostazioni personalizzate | Bootloader sbloccato |
 | File utente (se selezionato) | ROM LineageOS |
 
-Per tornare alla ROM originale servirebbe scaricare il firmware ufficiale Sony, flashare il firmware via tool (es. Xperia Flash Tool, Newflasher) ed eventualmente ribloccare il bootloader (opzionale, ma utile per sicurezza o app bancarie). Questa procedura **non si fa con un semplice factory reset**, è una procedura più complessa. 
+Per tornare alla ROM originale servirebbe scaricare il firmware ufficiale Sony, flashare il firmware via tool (es. Xperia Flash Tool, Newflasher) ed eventualmente ribloccare il bootloader (opzionale, ma utile per sicurezza o app bancarie). Questa procedura **non si fa con un semplice factory reset**, è una procedura più complessa.
 
 Dopo il factory reset comunque sono stati ri-attivate (è necessario rifarlo) le “Developer options”.
 

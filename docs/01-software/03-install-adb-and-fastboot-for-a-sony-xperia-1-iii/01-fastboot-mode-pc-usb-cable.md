@@ -15,8 +15,6 @@ Once in bootloader mode, you can use fastboot commands such as:
 
 fastboot devices
 
-aaaaaa
-
 ## LineageOS and phone slots
 
 Il telefono ha due slot di sistema, chiamati “Slot A” (attivo, quello da cui sta usando Android) e “Slot B” passivo, usato per aggiornamenti e modifiche”. Google ha introdotto l’A/B partitioning per aggiornamenti senza rischi: android installa il successivo aggiornamento sullo slot passivo e poi quando uno normalmente riavvia switcha su quello ed è quello che succede in maniera trasparente all’utente medio. Gli slot A/B occupano effettivamente spazio fisico duplicato sul dispositivo e ogni slot ha copie delle partizioni critiche ma non viene duplicato tutto il sistema (ad esempio, i dati utente /data, o la memoria interna con foto/app), ma solo il minimo indispensabile per poter avviare un sistema). Una parte significativa della memoria interna viene "riservata" al sistema A/B. Sui dispositivi con 128GB, parliamo di circa 3-4GB occupati in più per avere queste doppie partizioni.
@@ -31,8 +29,8 @@ fastboot --set-active=b
 
 Questa procedura si rivelerà necessaria durante l'aggiornamento a una nuova versione maggiore di Android. LineageOS utilizza un sistema **A/B** e supporta due modalità di aggiornamento:
 
-- Minor (security patch, bugfix) – con updater interno (OTA)
-- Major (es. versioni Android) – con Sideload via recovery	Lineage Recovery o TWRP
+- Minor (security patch, bugfix) - con updater interno (OTA)
+- Major (es. versioni Android) - con Sideload via recovery	Lineage Recovery o TWRP
 
 Per ogni versione Major è necessario:
 
@@ -49,7 +47,7 @@ Dunque, cosa significa avere LineageOS installato eventualmente su entrambi gli 
 
 **manualmente** se le hai flashate tu su entrambi
 
-Per verificare quale slot è attivo e cosa c’è nei due (prima di fare danni) se non si può fare da da recovery TWRP se non è stata ancora installata, da **ADB/fastboot (da PC). Dunque** 
+Per verificare quale slot è attivo e cosa c’è nei due (prima di fare danni) se non si può fare da da recovery TWRP se non è stata ancora installata, da **ADB/fastboot (da PC). Dunque**
 
 Col telefono in **fastboot mode**, digita da terminale:
 
@@ -57,7 +55,7 @@ fastboot --getvar current-slot
 
 dirà “a” o “b” e poi con:
 
-	fastboot getvar all 
+	fastboot getvar all
 
 si possono vedere TUTTI i dettagli, anche cosa contiene boot_a, system_a, ecc.
 
@@ -109,19 +107,19 @@ O, se supportato dal dispositivo (meglio) fare:
 
 Se non funziona neanche questo si può estrarre il boot.img dalla ROM di LineageOS scaricata dal sito ufficiale.
 
-fastboot getvar current-slot 
+fastboot getvar current-slot
 
-\# Supponiamo sia "a" 
+\# Supponiamo sia "a"
 
-fastboot flash boot boot_a.img 
+fastboot flash boot boot_a.img
 
-fastboot flash vbmeta vbmeta_a.img 
+fastboot flash vbmeta vbmeta_a.img
 
-fastboot flash dtbo dtbo_a.img 
+fastboot flash dtbo dtbo_a.img
 
-Quello che voglio backuppare è il boot. 
+Quello che voglio backuppare è il boot.
 
-Quindi fammi capire, 
+Quindi fammi capire,
 
 		partire da qui
 

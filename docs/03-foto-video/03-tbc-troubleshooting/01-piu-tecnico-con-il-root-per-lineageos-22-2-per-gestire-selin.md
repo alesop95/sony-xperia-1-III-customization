@@ -4,7 +4,7 @@
 
 **ottenere i permessi root su LineageOS**
 
-**🔧 Passaggi per ottenere il root con Magisk su LineageOS**
+** Passaggi per ottenere il root con Magisk su LineageOS**
 
 **1. Scarica Magisk**
 
@@ -36,7 +36,7 @@ Ora, apri Termux e digita:
 
 Dovrebbe comparire il prompt root (#) e una richiesta di permesso da Magisk.
 
-🔐 Vuoi che ti aiuti a verificare se hai già una recovery compatibile o a scaricare quella giusta per il tuo Xperia 1 III?
+ Vuoi che ti aiuti a verificare se hai già una recovery compatibile o a scaricare quella giusta per il tuo Xperia 1 III?
 
 Posso cercarti il file .img corretto per TWRP o Lineage Recovery e guidarti nel flash passo passo. Fammi sapere!
 
@@ -44,7 +44,7 @@ Mettere SELinux in permissive per test. non ho capito perchè su apkpure mi fa s
 
 **ChatGPT ha detto:**
 
-Ah, perfetto, ti spiego bene la questione SELinux e l’app per cambiarlo — e perché su APKPure ti fa solo “Request Update” senza scaricare:
+Ah, perfetto, ti spiego bene la questione SELinux e l’app per cambiarlo - e perché su APKPure ti fa solo “Request Update” senza scaricare:
 
 **SELinux Mode Changer su APKPure**
 

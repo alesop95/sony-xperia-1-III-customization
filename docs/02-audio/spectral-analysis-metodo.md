@@ -130,6 +130,21 @@ generano immagini equivalenti. Lo strumento di questo progetto aggiunge a quelli
 e il verdetto automatico, e si integra con `track-benchmark.py`: quest'ultimo dice se la dimensione
 del file e' plausibile per il formato dichiarato, questo dice se il contenuto reale lo giustifica.
 
+## Riferimenti esterni
+
+Strumenti e metodi su cui si appoggia questo documento, consultati per definire l'approccio:
+
+- Spek, analizzatore di spettro acustico open source per l'ispezione visiva del taglio in
+  frequenza: https://www.spek.cc
+- SoX, Sound eXchange, per generare spettrogrammi da riga di comando (`sox in.flac -n spectrogram`):
+  https://sourceforge.net/projects/sox/
+- FFmpeg, filtro `showspectrumpic` per spettrogrammi da CLI: https://ffmpeg.org
+- The Well-Tempered Computer, "Lossless, hi-res or fake": metodi di riconoscimento (cutoff netto,
+  bit bassi a zero, snap alla griglia di quantizzazione):
+  https://www.thewelltemperedcomputer.com/SW/AudioTools/Detect.htm
+- Dynamic Range Database, valori DR reali per edizione, fonte per raffinare i master:
+  https://dr.loudness-war.info
+
 [^nyq]: *Nyquist* - la massima frequenza rappresentabile senza aliasing e' meta' della frequenza di
 campionamento; oltre quella soglia un campionamento non porta informazione.
 

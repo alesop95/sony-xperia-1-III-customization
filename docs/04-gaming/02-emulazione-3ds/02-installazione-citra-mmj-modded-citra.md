@@ -26,15 +26,13 @@ I passaggi sono I seguenti:
       - Frame skipping: 0 o 1 se hai cali di framerate
       - Audio: attiva HLE (più veloce)
 
-Aaaaaaaaaa
-
 ## Miglioramenti
 
 Ti spiego tutto con semplicità e un po’ di contesto in stile "glossario pratico per emulazione", così capisci meglio cosa significano upscaling, shader, trucchi, plugin e texture pack, e come possono migliorare la tua esperienza su Citra (o in generale con gli emulatori).
 
 ### Texture pack
 
-Le texture pack sono dei pacchetti di immagini ad alta risoluzione che **sostituiscono le texture originali** di un gioco. Le texture sono le "pelli" che ricoprono i modelli 3D (es. il viso di Mario, i muri, l’erba). Perché usarli? 
+Le texture pack sono dei pacchetti di immagini ad alta risoluzione che **sostituiscono le texture originali** di un gioco. Le texture sono le "pelli" che ricoprono i modelli 3D (es. il viso di Mario, i muri, l’erba). Perché usarli?
 
 1. I giochi 3DS sono nati per uno schermo piccolo e bassa risoluzione.
 1. Su uno smartphone FHD+ come il tuo, i giochi possono sembrare pixellosi o sfocati.
@@ -77,8 +75,6 @@ Su Android, però, i plugin veri e propri sono rari, mentre le mod dei giochi (p
 1. Una patch per Pokémon che rimuove i lag nelle battaglie
 1. Una traduzione in italiano di un gioco uscito solo in giapponese
 
-Aaaaaa
-
 1. [https://gbatemp.net](https://gbatemp.net)
 1. [https://romhacking.net](https://romhacking.net)
 
@@ -89,15 +85,11 @@ Fare upscaling significa
 1. https://www.speedfly.cn
 1. https://gamehacking.org
 
-aaaaa
-
 Puoi trovare cheat su siti come:
 
-➡️ [https://www.speedfly.cn/category/cheat/](https://www.speedfly.cn/category/cheat/) 
+ [https://www.speedfly.cn/category/cheat/](https://www.speedfly.cn/category/cheat/)
 
-➡️ Reddit o Discord dedicati a Citra
-
-Aaa
+ Reddit o Discord dedicati a Citra
 
 ## Pacchetto completo
 
@@ -132,9 +124,9 @@ EnableCpuJit=true
 
 Da mettere dentro /Android/data/org.citra.citra_mmj/files/citra-emu/config/.
 
-anzichè avere 
+anzichè avere
 
-/Android/data/org.citra.citra_mmj/files/citra-emu/config/ 
+/Android/data/org.citra.citra_mmj/files/citra-emu/config/
 
 ho:
 
@@ -154,7 +146,7 @@ Quello che sta succedendo è: Alcune versioni di **Citra MMJ recenti (come la tu
 
 /citra-emu/sdmc/
 
- **perfettamente corretta** ✅. **Conclusione:** Usa /citra-emu/ nella root interna del dispositivo.
+ **perfettamente corretta** . **Conclusione:** Usa /citra-emu/ nella root interna del dispositivo.
 Non usare la Android/data/... (è limitata, e in alcune build viene ignorata da MMJ). Quindi i file di configurazione vanno in:
 
 /citra-emu/config/
@@ -171,21 +163,21 @@ Per le texture pack si possono scaricare texture pack come quelle per Pokèmon X
 
 	/citra-emu/load/textures/<ID_GIOCO>/
 
-L’ID_GIOCO può essere Trovato avviando il gioco e poi andando su Settings > System in Citra e questo ID compare nel titolo della finestra o nel log. 
+L’ID_GIOCO può essere Trovato avviando il gioco e poi andando su Settings > System in Citra e questo ID compare nel titolo della finestra o nel log.
 
 Dopo le considerazioni precedenti sul percorso file. Poi bisogna attivare “Curstom Textures in Citra MMJ”. Per fare questo nell’interfaccia di Citra MMJ, per attivare il caricamento delle texture custom:
 
 1. Apri Citra MMJ
-1. Tocca l’icona menu hamburger (☰) in alto a sinistra
+1. Tocca l’icona menu hamburger  in alto a sinistra
 1. Vai su Settings / Impostazioni
 1. Vai su Graphics > Advanced
 1. Attiva l’opzione “Use Custom Textures”
 1. Attiva anche (opzionali ma utili):
-   1. ✅ Texture Filter: Linear
-   1. ✅ Enable Hardware Shader
-   1. ✅ Shader JIT
+   1.  Texture Filter: Linear
+   1.  Enable Hardware Shader
+   1.  Shader JIT
 
-I trucchi sono semplice file .txt da caricare. 
+I trucchi sono semplice file .txt da caricare.
 
 Per le Mod consigliate:
 
@@ -193,13 +185,13 @@ Per le Mod consigliate:
 1. Traduzioni fan-made
 1. QoL patch (fix menu lag, skip intro ecc.)
 
-📁 Metti le patch .ips o .xdelta in:
+ Metti le patch .ips o .xdelta in:
 
 /Android/data/org.citra.citra_mmj/files/citra-emu/patches/
 
-**🔌 MODULI MAGISK per POTENZIARE CITRA**
+**MODULI MAGISK per POTENZIARE CITRA**
 
-💥 Scaricabili (posso linkarteli direttamente se vuoi):
+ Scaricabili (posso linkarteli direttamente se vuoi):
 
 | **Modulo Magisk** | **Funzione** |
 | --- | --- |
@@ -210,7 +202,7 @@ Per le Mod consigliate:
 
 Posso prepararti un **ZIP unico con i 4 moduli compatibili** e istruzioni per Magisk.
 
-**🕹 Gamepad consigliato**
+**Gamepad consigliato**
 
 8BitDo Pro 2
 

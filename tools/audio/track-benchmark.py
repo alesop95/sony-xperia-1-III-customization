@@ -156,9 +156,12 @@ def load_masters(db_path):
 
 
 def find_master(masters, query):
-    q = query.lower().strip()
-    hits = [m for m in masters
-            if q in ("%s %s" % (m.get("artist", ""), m.get("album", ""))).lower()]
+    tokens = [t for t in query.lower().split() if t]
+    hits = []
+    for m in masters:
+        hay = ("%s %s" % (m.get("artist", ""), m.get("album", ""))).lower()
+        if all(t in hay for t in tokens):
+            hits.append(m)
     return hits
 
 

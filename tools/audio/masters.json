@@ -1,0 +1,334 @@
+{
+  "masters": [
+    {
+      "artist": "David Bowie",
+      "album": "The Rise and Fall of Ziggy Stardust",
+      "year": "1972",
+      "master": "2012 Remaster 24/96 HDtracks",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "10–13"
+    },
+    {
+      "artist": "The Beatles",
+      "album": "Abbey Road",
+      "year": "1969",
+      "master": "1987 EMI CD originale 16/44.1",
+      "bit": 16.0,
+      "sr": 44.1,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "Fleetwood Mac",
+      "album": "Rumours",
+      "year": "1977",
+      "master": "CD Warner Bros. originale 16/44.1",
+      "bit": 16.0,
+      "sr": 44.1,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "AC/DC",
+      "album": "Back In Black",
+      "year": "1980",
+      "master": "2003 Remaster 24/96 Qobuz",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "12–14"
+    },
+    {
+      "artist": "Michael Jackson",
+      "album": "Thriller",
+      "year": "1982",
+      "master": "MFSL CD originale 16/44.1",
+      "bit": 16.0,
+      "sr": 44.1,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "Elton John",
+      "album": "Goodbye Yellow Brick Road",
+      "year": "1973",
+      "master": "MFSL CD 16/44.1",
+      "bit": 16.0,
+      "sr": 44.1,
+      "channels": 2.0,
+      "dr": "12–14"
+    },
+    {
+      "artist": "Led Zeppelin",
+      "album": "IV",
+      "year": "1971",
+      "master": "2014 Remaster 24/96 Qobuz",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "Queen",
+      "album": "A Night at the Opera",
+      "year": "1975",
+      "master": "2011 Remaster 24/96 Qobuz",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "Dire Straits",
+      "album": "Brothers in Arms",
+      "year": "1985",
+      "master": "MFSL SACD remastered 24/88.2 FLAC",
+      "bit": 24.0,
+      "sr": 88.2,
+      "channels": 2.0,
+      "dr": "12–14"
+    },
+    {
+      "artist": "Pink Floyd",
+      "album": "The Wall",
+      "year": "1979",
+      "master": "2011 Remaster 24/96 HDtracks",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "Pink Floyd",
+      "album": "Animals",
+      "year": "1977",
+      "master": "2011 Remaster 24/96 Qobuz",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "YES",
+      "album": "Fragile",
+      "year": "1971",
+      "master": "2004 Remaster 24/96 HDtracks",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "Supertramp",
+      "album": "Breakfast in America",
+      "year": "1979",
+      "master": "2002 Remaster 24/96 Qobuz",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "Nirvana",
+      "album": "MTV Unplugged",
+      "year": "1994",
+      "master": "2009 Remaster 24/96 HDtracks",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "9–11"
+    },
+    {
+      "artist": "Rage Against the Machine",
+      "album": "Rage Against the Machine",
+      "year": "1992",
+      "master": "2019 Remaster 24/96 Qobuz",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "Toto",
+      "album": "Toto IV",
+      "year": "1982",
+      "master": "2006 Remaster 24/96 HDtracks",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "Tracy Chapman",
+      "album": "Tracy Chapman",
+      "year": "1988",
+      "master": "2015 Remaster 24/96 Qobuz",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "Porcupine Tree",
+      "album": "In Absentia",
+      "year": "2002",
+      "master": "2007 Remaster 24/96 HDtracks",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "Steely Dan",
+      "album": "Aja",
+      "year": "1977",
+      "master": "2004 Remaster 24/96 HDtracks",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "12–14"
+    },
+    {
+      "artist": "Taylor Swift",
+      "album": "Midnights",
+      "year": "2023",
+      "master": "Digital 24/44.1 Lossless (Apple Music)",
+      "bit": 24.0,
+      "sr": 44.1,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "R.E.M.",
+      "album": "Automatic For The People",
+      "year": "1992",
+      "master": "2006 Remaster 24/96 Qobuz",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "Paul Simon",
+      "album": "Graceland",
+      "year": "1986",
+      "master": "2012 Remaster 24/96 HDtracks",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "Red Hot Chili Peppers",
+      "album": "Blood Sugar Sex Magik",
+      "year": "1991",
+      "master": "2014 Remaster 24/96 Qobuz",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "Eagles",
+      "album": "Hotel California",
+      "year": "1976",
+      "master": "2013 Remaster 24/96 HDtracks",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "12–14"
+    },
+    {
+      "artist": "Miles Davis",
+      "album": "Kind of Blue",
+      "year": "1959",
+      "master": "2009 Remaster 24/96 Qobuz",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "Radiohead",
+      "album": "OK Computer",
+      "year": "1997",
+      "master": "2009 Remaster 24/96 HDtracks",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "Oasis",
+      "album": "Definitely Maybe",
+      "year": "1994",
+      "master": "Edizione giapponese CD 16/44.1 (Japan Mini LP)",
+      "bit": 16.0,
+      "sr": 44.1,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "Billie Eilish",
+      "album": "Happier Than Ever",
+      "year": "2021",
+      "master": "2021 Digital 24/48 (Apple Music Lossless)",
+      "bit": 24.0,
+      "sr": 48.0,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "John Mayer",
+      "album": "Sob Rock",
+      "year": "2021",
+      "master": "2021 Digital 24/48 (Qobuz)",
+      "bit": 24.0,
+      "sr": 48.0,
+      "channels": 2.0,
+      "dr": "10–12"
+    },
+    {
+      "artist": "Daft Punk",
+      "album": "Random Access Memories",
+      "year": "2013",
+      "master": "Qobuz 24/192",
+      "bit": 24.0,
+      "sr": 192.0,
+      "channels": 2.0,
+      "dr": "11–13"
+    },
+    {
+      "artist": "Pink Floyd",
+      "album": "The Dark Side of the Moon",
+      "year": "1973",
+      "master": "Qobuz 24/192",
+      "bit": 24.0,
+      "sr": 192.0,
+      "channels": 2.0,
+      "dr": "12–14"
+    },
+    {
+      "artist": "Green Day",
+      "album": "American Idiot",
+      "year": "2004",
+      "master": "Qobuz 24/96",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "13–15"
+    },
+    {
+      "artist": "Dire Straits",
+      "album": "Making Movies",
+      "year": "1980",
+      "master": "24/96 MFSL SACD remaster",
+      "bit": 24.0,
+      "sr": 96.0,
+      "channels": 2.0,
+      "dr": "12–14"
+    }
+  ]
+}

@@ -80,6 +80,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("path", nargs="?", default=None)
     ap.add_argument("--check", action="store_true", help="non riscrive, stampa solo il report")
+    ap.add_argument("--align", action="store_true",
+                    help="allinea le colonne Bit Depth e Sample rate al master indicato nel testo "
+                         "Benchmark, dove differiscono, poi ricalcola le colonne derivate")
     args = ap.parse_args()
 
     try:
@@ -122,6 +125,7 @@ def main():
         sys.exit(2)
 
     warnings = []
+    aligned = []
     recomputed = 0
     changed = 0
 
@@ -143,6 +147,26 @@ def main():
             warnings.append("[dati incompleti] %s: bit/sample/canali/durata non leggibili" % label)
             continue
 
+        # confronto col testo Benchmark; eventuale allineamento delle colonne al master indicato
+        bench = cells[col[BENCH_COL]]
+        m = re.search(r"(\d{2})\s*/\s*(\d+(?:\.\d+)?)", bench)
+        mismatch = False
+        if m:
+            b_bit = float(m.group(1))
+            b_sr = float(m.group(2))
+            mismatch = abs(b_bit - bit) > 0.01 or abs(b_sr - sr) > 0.01
+            if mismatch and args.align:
+                aligned.append("%s: %s/%s -> %s/%s"
+                               % (label, fmt_num(bit), fmt_num(sr), fmt_num(b_bit), fmt_num(b_sr)))
+                bit, sr = b_bit, b_sr
+                cells[col[BIT_COL]] = fmt_num(bit)
+                cells[col[SR_COL]] = fmt_num(sr)
+            elif mismatch:
+                warnings.append(
+                    "[incongruenza master] %s: Benchmark dice %s/%s ma le colonne sono %s/%s"
+                    % (label, fmt_num(b_bit), fmt_num(b_sr), fmt_num(bit), fmt_num(sr))
+                )
+
         pcm = bit * sr * ch
         flac = pcm * FLAC_FACTOR
         mb = flac * dur * 60.0 / 8.0 / 1000.0
@@ -154,23 +178,15 @@ def main():
             cells[col[c]] = new
         recomputed += 1
 
-        # incongruenza fra testo Benchmark e colonne bit/sample
-        bench = cells[col[BENCH_COL]]
-        m = re.search(r"(\d{2})\s*/\s*(\d+(?:\.\d+)?)", bench)
-        if m:
-            b_bit = float(m.group(1))
-            b_sr = float(m.group(2))
-            if abs(b_bit - bit) > 0.01 or abs(b_sr - sr) > 0.01:
-                warnings.append(
-                    "[incongruenza master] %s: Benchmark dice %s/%s ma le colonne sono %s/%s"
-                    % (label, fmt_num(b_bit), fmt_num(b_sr), fmt_num(bit), fmt_num(sr))
-                )
-
         lines[i] = "| " + " | ".join(cells) + " |"
 
     # report
     print("Righe ricalcolate:", recomputed)
     print("Celle derivate aggiornate:", changed)
+    if args.align:
+        print("Righe allineate al Benchmark:", len(aligned))
+        for a in aligned:
+            print("  -", a)
     print("Incongruenze segnalate:", len(warnings))
     for w in warnings:
         print("  -", w)

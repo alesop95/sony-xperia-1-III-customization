@@ -38,6 +38,9 @@ __pycache__/
 Thumbs.db
 desktop.ini
 
+# Eccezione: le dipendenze vanno versionate per riproducibilita' su un clone
+!/requirements.txt
+
 # Privati
 CLAUDE.local.md
 .claude/settings.local.json

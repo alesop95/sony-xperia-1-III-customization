@@ -1,0 +1,19 @@
+# Dipendenze Python del progetto.
+# Installazione su una macchina nuova (dopo il clone da GitHub):
+#   python -m pip install --user -r requirements.txt
+#
+# Le versioni indicate sono quelle su cui gli strumenti sono stati validati.
+# Gli strumenti tools/audio/track-benchmark.py e tools/audio/benchmark-calc.py
+# usano solo la libreria standard e non richiedono dipendenze.
+
+# Conversione del .docx sorgente in Markdown (tools/docx-to-md.py).
+# Serve solo se si rigenera la documentazione dal .docx (che resta locale).
+python-docx>=1.2.0
+
+# Analisi audio quantitativa e spettrale (tools/audio/spectral-audit.py).
+numpy>=2.2.0
+soundfile>=0.14.0
+
+# Opzionale: solo per generare il PNG dello spettrogramma.
+# Senza matplotlib, spectral-audit funziona con --no-plot.
+matplotlib>=3.11.0

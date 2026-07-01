@@ -1,5 +1,7 @@
 # Sony Xperia 1 III (pdx215) with LineageOS 22.2
 
+> Per orientarti nello sviluppo (come si usa il progetto, mappa runbook/strumenti, ordine operativo e stato) vedi `DEVELOPMENT.md`.
+
 ## Contenuti
 
 - [The software on the phone](01-software/README.md)

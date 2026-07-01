@@ -1,4 +1,5 @@
 {
+  "README.md": "> Per orientarti nello sviluppo (come si usa il progetto, mappa runbook/strumenti, ordine operativo e stato) vedi `DEVELOPMENT.md`.",
   "03-foto-video/README.md": "> Percorso primario: applicazioni fotografiche proprietarie Sony (Photography Pro, Cinema Pro, External Monitor), installate dalle APK in `_notes/apks`. Vedi il `RUNBOOK.md` di questa cartella e la sezione `04-tbc-app-proprietarie-sony.md`. Le sezioni GCam (Camera2 API, XML GCam, troubleshooting SELinux) sono marcate LEGACY e conservate solo come riferimento storico.",
   "03-foto-video/01-verificare-che-camers2-api-e-abilitata-con-lineageos.md": "> LEGACY - percorso GCam, abbandonato in favore delle app proprietarie Sony. Conservato come riferimento storico. Per il percorso attuale vedi `../RUNBOOK.md`.",
   "03-foto-video/02-trovare-un-file-xml-di-configurazione-per-gcam-per-xperia-1.md": "> LEGACY - percorso GCam, abbandonato in favore delle app proprietarie Sony. Conservato come riferimento storico. Per il percorso attuale vedi `../RUNBOOK.md`.",

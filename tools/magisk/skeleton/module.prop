@@ -1,0 +1,6 @@
+id=xperia_custom_module
+name=Xperia 1 III Custom Module
+version=v0.1
+versionCode=1
+author=alesop95
+description=Scheletro di modulo Magisk per il progetto Xperia 1 III. Rinominare id/name/description prima dell'uso.

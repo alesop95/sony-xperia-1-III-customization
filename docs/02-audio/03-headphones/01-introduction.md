@@ -1,0 +1,18 @@
+# Introduction
+
+Per chiarire perché i driver ad alta impedenza possono avere maggiore precisione e minori distorsioni, bisogna analizzare sia l’aspetto elettrico che quello meccanico. Le sottosezioni linkate mostrano perchè una cuffia ad alta impedenza è considerata migliore in ambito audiofilo con un taglio quasi-ingegneristico.
+
+Qualitativamente si può considerare che questo accade per diversi motivi:
+
+- Qualità costruttiva del driver: le cuffie ad alta impedenza spesso montano driver più grandi, robusti, con bobine mobili più pesanti o avvolgimenti più lunghi. Questo significa maggiore precisione nella gestione delle frequenze e minori distorsioni armoniche.
+- Minor corrente, maggior tensione: pilotare una cuffia alta impedenza significa spingere più tensione a basso assorbimento di corrente. Questo riduce l’effetto di distorsione introdotto dalla corrente elevata, che può causare riscaldamento e non linearità nel segnale.
+- Interazione con l’amplificatore: con alta impedenza, la cuffia è meno influenzata dall'impedenza di uscita dell’amplificatore (dovrebbe essere molto bassa), mantenendo una risposta in frequenza più lineare e stabile, soprattutto nelle alte frequenze
+- Migliore controllo e dettaglio sonoro: la rigidità del sistema magnetico e la minore distorsione portano a un suono più trasparente, dinamico e con un’immagine sonora più precisa. Perfetto per chi cerca la massima fedeltà.
+
+Cuffie più esigenti da pilotare va intesa anche generalmente considerando il fatto che un’amplificazione standard da smartphone, laptop o dispositivi portatili NON è sufficiente per alimentarle correttamente. Dato che richiedono più potenza, il volume percepito sarà basso se non sono pilotate correttamente. Questo è anche il motivo per cui serve un amplificatore cuffie di qualità dedicato, con capacità di fornire tensione e corrente adeguate, altrimenti il suono sarà debole, privo di dinamica e bassi controllati.
+
+Una cuffia ad alta impedenza è migliore in termini di qualità audio SOLO SE si ha l’attrezzatura adeguata per pilotarla. Usarla con dispositivi non adatti, significherà semplicemente usarla come una cuffia “sprecata” e suonerà male. Per un suono serio,  prendi un ampli cuffie decente (e possibilmente un DAC esterno), altrimenti il vantaggio dell’impedenza alta rimane solo sulla carta. I DAC esterni da soli di solito non sono “l’attrezzatura adatta” per pilotare cuffie ad alta impedenza perché è pensato semplicemente per convertire il segnale digitale in segnale analogico. Non è (quasi mai) un amplificatore: il segnale che esce dal DAC è un segnale a linea (line out), cioè a bassa potenza e basso livello, non sufficiente a pilotare direttamente cuffie, specialmente quelle ad alta impedenza. Quello che serve realmente è un amplificatore cuffie dedicato che ha la capacità di fornire alta tensione e corrente per muovere correttamente i driver ad alta impedenza, senza distorsioni o perdita di dinamica. Molti DAC esterni di fascia alta integrano anche un amplificatore cuffie (cosiddetti DAC/amp combo). In questo caso sì, sono in grado di pilotare cuffie ad alta impedenza, ma vanno verificate comunque le specifiche di uscita della cuffia (come la potenza erogata – es. mW su 300Ω).
+
+Un DAC puro, senza ampli cuffie integrato, non può sostituire un amplificatore cuffie dedicato. Un DAC con amplificatore integrato può fare il lavoro, ma dipende dalla qualità e potenza di questo amplificatore interno.
+
+Per sfruttare al 100% una cuffia ad alta impedenza (posto che è una discriminante molto importante come chiarito in seguito) la catena ideale è Fonte digitale → DAC (meglio se standalone o integrato) → Amplificatore cuffie dedicato → cuffia alta impedenza.

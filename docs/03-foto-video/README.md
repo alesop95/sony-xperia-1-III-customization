@@ -10,9 +10,7 @@ Hai uno **Xperia 1 III (pdx215)** con LineageOS 22.2 (Android 15) installato.
 
 Hai uno **Xperia 1 III (pdx215)** con LineageOS 22.2 (Android 15) installato. Quindi:
 
- Android 15 (API 35) → compatibile con la maggior parte delle app recenti.
- Bootloader sbloccato → spesso permette di installare mod o fotocamere alternative.
- No Sony stock camera app (presumibilmente) → su LineageOS non sempre ci sono tutte le funzionalità foto originali Sony.
+ Android 15 (API 35) → compatibile con la maggior parte delle app recenti. Bootloader sbloccato → spesso permette di installare mod o fotocamere alternative. No Sony stock camera app (presumibilmente) → su LineageOS non sempre ci sono tutte le funzionalità foto originali Sony.
 
 **APKs da provare (scaricabili da APKPure o simili)**
 
@@ -164,15 +162,13 @@ Alternativamente, scatta wide e poi ritaglia in post se serve un po’ di zoom.
 
 **Cosa perdi se non usi tutte e tre le fotocamere?**
 
-**Perdita di versatilità**:
-Non potrai cambiare obiettivo (ultrawide o tele) per adattarti meglio alla scena.
+**Perdita di versatilità**: Non potrai cambiare obiettivo (ultrawide o tele) per adattarti meglio alla scena.
 
 Se vuoi una foto panoramica, senza ultrawide sei costretto a fare più scatti o foto più “ristrette”.
 
 Se vuoi zoomare senza perdere qualità, senza tele fai solo zoom digitale (che degrada la qualità).
 
-**Qualità specifica per scenario**:
-Le tre fotocamere sono ottimizzate per scopi diversi, quindi se usi solo la wide, potresti non ottenere la migliore resa in tutte le situazioni.
+**Qualità specifica per scenario**: Le tre fotocamere sono ottimizzate per scopi diversi, quindi se usi solo la wide, potresti non ottenere la migliore resa in tutte le situazioni.
 
 Tele per ritratti nitidi con sfondo sfocato.
 

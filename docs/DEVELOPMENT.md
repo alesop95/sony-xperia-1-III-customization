@@ -6,8 +6,7 @@
 
 Il progetto ha due meta'. La conoscenza vive in `docs/`, generata fedelmente dal documento sorgente di 201 pagine e divisa in quattro aree: software, audio, foto/video e gaming. Gli strumenti vivono in `tools/`, come script deterministici e riutilizzabili. La filosofia di lavoro e' preparare e documentare tutto prima, e collegare il telefono dopo, manualmente: nessuno script tocca il dispositivo da solo.
 
-Ogni area ha le sue sezioni di riferimento generate dal sorgente, e dove la procedura e'
-consolidata anche un `RUNBOOK.md` curato a mano: una sequenza lineare ed eseguibile con gate di sicurezza, che il generatore non sovrascrive.
+Ogni area ha le sue sezioni di riferimento generate dal sorgente, e dove la procedura e' consolidata anche un `RUNBOOK.md` curato a mano: una sequenza lineare ed eseguibile con gate di sicurezza, che il generatore non sovrascrive.
 
 ## Come si usa
 

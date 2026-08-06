@@ -1,11 +1,6 @@
 # Inventario APK e asset di sviluppo
 
-> Mappa di tutto il materiale binario in `_notes/` (cartella ignorata da git): a cosa serve
-> ogni APK, a quale area appartiene, in che ordine si installa e cosa e' legacy. I package name
-> sono estratti dai manifest delle APK; dove l'estrazione non e' univoca sono marcati da
-> confermare. L'installazione usa comunque il file APK, non il package, quindi questi valori
-> servono solo per verifica e disinstallazione. Lo script `tools/android/install-apks.ps1`
-> (oppure `.sh`) installa l'insieme attivo nell'ordine corretto.
+> Mappa di tutto il materiale binario in `_notes/` (cartella ignorata da git): a cosa serve ogni APK, a quale area appartiene, in che ordine si installa e cosa e' legacy. I package name sono estratti dai manifest delle APK; dove l'estrazione non e' univoca sono marcati da confermare. L'installazione usa comunque il file APK, non il package, quindi questi valori servono solo per verifica e disinstallazione. Lo script `tools/android/install-apks.ps1` (oppure `.sh`) installa l'insieme attivo nell'ordine corretto.
 
 ## Applicazioni attive
 
@@ -37,19 +32,16 @@
 
 ## Installazione
 
-Le APK si installano da PC con il telefono collegato e il debug USB attivo, tramite ADB. Lo script
-dedicato gestisce l'ordine e prosegue anche se una singola installazione fallisce.
+Le APK si installano da PC con il telefono collegato e il debug USB attivo, tramite ADB. Lo script dedicato gestisce l'ordine e prosegue anche se una singola installazione fallisce.
 
 ```powershell
 pwsh -File tools/android/install-apks.ps1
 ```
 
-In alternativa, una singola APK si installa con il comando seguente, dove `-r` reinstalla mantenendo
-i dati se l'app e' gia' presente.
+In alternativa, una singola APK si installa con il comando seguente, dove `-r` reinstalla mantenendo i dati se l'app e' gia' presente.
 
 ```powershell
 adb install -r "_notes/apks/Photography_Pro_1.3.2.A.1.0.apk"
 ```
 
-Il dettaglio di sequenza, dipendenze e problemi noti per le app fotografiche e' nel runbook
-`03-foto-video/RUNBOOK.md`.
+Il dettaglio di sequenza, dipendenze e problemi noti per le app fotografiche e' nel runbook `03-foto-video/RUNBOOK.md`.

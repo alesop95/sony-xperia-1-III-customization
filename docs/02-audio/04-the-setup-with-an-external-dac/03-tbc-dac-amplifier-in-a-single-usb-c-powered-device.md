@@ -322,11 +322,7 @@ LINDY is a safer choice, more stable for power when it comes to powering and dat
       1. USB-A Female or USB-C Female (→ Portable DAC/Amp) - this leg receives two things:
          - The USB digital audio signal from the phone (via the Y-cable’s internal circuit).
          - The 5V power injected from the power-only leg.
-- This is the data + power output leg and carries audio signal (streamed by the phone and passing through the splitter) + 5V power to the DAC. Is the main connection to the DAC/amp and acts like the "active delivery line" for both data (USB audio) and power. The audio signal from the phone is streamed through the splitter and flows to this port, arriving at the DAC.
-      1. USB-C or Micro USB Female (→ Power Bank)
-         - This is the power-only (input) leg which is connected to a power bank or charger
-         - Injects 5V into the chain without carrying any data
-         - It’s isolated from the Xperia and doesn't interfere with USB host signaling
+- This is the data + power output leg and carries audio signal (streamed by the phone and passing through the splitter) + 5V power to the DAC. Is the main connection to the DAC/amp and acts like the "active delivery line" for both data (USB audio) and power. The audio signal from the phone is streamed through the splitter and flows to this port, arriving at the DAC. 1. USB-C or Micro USB Female (→ Power Bank) - This is the power-only (input) leg which is connected to a power bank or charger - Injects 5V into the chain without carrying any data - It’s isolated from the Xperia and doesn't interfere with USB host signaling
 
 The splitter allows the phone to act as a USB host, while avoiding underpowering the DAC - which is often the issue when connecting high-performance DAC/amps to a phone directly. This way the phone sends digital audio, the power bank feeds 5V, the DAC receives both and the headphones get clean analog audio. Therefore we need:
 
@@ -555,8 +551,7 @@ With the build number lineage_pdx215-userdebug 15 BP1A.250505.0053439504aa9 e Li
 - Unless the maintainer for pdx215 removed or broke it, UAC2 should work.
 - Xperia hardware already supports OTG host mode perfectly - the only risk is if this specific nightly has USB stack bugs
 
-Even if the DAC gets its power from a power bank via the Y-cable,
-the USB data connection still needs to enter  USB host mode (OTG mode), mantain a stable handshake with the DAC and keep the DAC awake when streaming. External power removes the current-draw problem but doesn’t magically fix USB stack issues. Even though you’ll be feeding the M15 with external power via the LINDY OTG Y-cable + power bank, the data link still relies on kernel OTG handling.
+Even if the DAC gets its power from a power bank via the Y-cable, the USB data connection still needs to enter  USB host mode (OTG mode), mantain a stable handshake with the DAC and keep the DAC awake when streaming. External power removes the current-draw problem but doesn’t magically fix USB stack issues. Even though you’ll be feeding the M15 with external power via the LINDY OTG Y-cable + power bank, the data link still relies on kernel OTG handling.
 
 Questyle M15, boots its DAC + Current-Mode Amp section together, which can add delay before USB is ready. This timing quirk is what sometimes confuses Android into not seeing it until you re-plug or power-cycle.
 

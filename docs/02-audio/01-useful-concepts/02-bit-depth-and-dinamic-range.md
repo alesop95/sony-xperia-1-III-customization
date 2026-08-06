@@ -1,20 +1,16 @@
 # Bit depth (and dinamic range)
 
-bit depth matters just as much. Audio resolution is 2-dimensional, and the sample rate is only your resolution in *one* dimension.
-PCM audio is amplitude over time. Two dimensions. You need resolution for the “time” axis, and you need resolution for the “amplitude” axis.
-Going high on one and low on the other doesn’t make much sense.
+bit depth matters just as much. Audio resolution is 2-dimensional, and the sample rate is only your resolution in *one* dimension. PCM audio is amplitude over time. Two dimensions. You need resolution for the “time” axis, and you need resolution for the “amplitude” axis. Going high on one and low on the other doesn’t make much sense.
 
 192khz at 24bit should be enough for all future.
 
-**However**, note that when *processing* audio, the higher the sample rate the better. If you’re doing non-linear processing of audio, you will get harmonics, and you might get aliasing, and you avoid the problems of aliasing by using a higher sample rate.
-A higher sample rate means you're more protected against aliasing.
+**However**, note that when *processing* audio, the higher the sample rate the better. If you’re doing non-linear processing of audio, you will get harmonics, and you might get aliasing, and you avoid the problems of aliasing by using a higher sample rate. A higher sample rate means you're more protected against aliasing.
 
 And yes, aliasing sounds *horrible*.
 
 Bit depth determines the minimum possible “step” change in the output waveform. With a bit depth of 1, you can only represent two output levels. With each additional bit, the number of available steps doubles and results in a smoother recreation of the original waveform in a linear pulse coded modulation recording (LPCM.) CDs use 16 bits per sample per channel for roughly 65K different output levels per sample. Alternative encoding methods can trade off a higher sample rate for a lower bit depth, or can encode audio in a compressed form that requires fewer bits per sample, throwing away data that a human is unlikely to notice during playback. All lossy schemes like MP3, Dolby, DTS, MP4, and AAC use this technique
 
-Audio is always analog. The waveforms rise and fall in smooth, continuous, non-incremental ways and the frequency range goes from nothing to so far beyond human hearing that it bumps into the LF AM radio band.
-Because even the parts you cannot hear have an influence on the parts you can hear, audible sounds are complex and nuanced things. The waves heterodyne as they interact, in the air, to produce additional complexity.
+Audio is always analog. The waveforms rise and fall in smooth, continuous, non-incremental ways and the frequency range goes from nothing to so far beyond human hearing that it bumps into the LF AM radio band. Because even the parts you cannot hear have an influence on the parts you can hear, audible sounds are complex and nuanced things. The waves heterodyne as they interact, in the air, to produce additional complexity.
 
 The dynamic range of sound, in nature, is a log scale that ranges from the very quiet sound of your own bodily functions up to the eruption of Krakatoa, the loudest sound in recorded history, which was heard 3000 miles away.
 

@@ -121,8 +121,7 @@ In TWRP, fai un **backup Nandroid** completo (è nelle opzioni Backup). Quindi u
 
 Trascina per confermare → parte il backup completo
 
-Quando torni: rivedrai uno ZIP contenente il backup.
-In caso di problemi:
+Quando torni: rivedrai uno ZIP contenente il backup. In caso di problemi:
 
 Avvia TWRP
 

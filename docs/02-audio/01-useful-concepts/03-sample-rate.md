@@ -166,8 +166,7 @@ Delta-sigma converters have only 1 (one) bit resolution, but extreme sampling fr
 
 	Higher sampling rates are useful during the production process to avoid e.g. rounding errors when performing mathematical operations on the source material (and of course, all of the mixing and filtering processes in contemporary audio production are computer-based, and so are “mathematical”). Can you actually *hear* the difference when higher sampling rates are used? Sometimes. Maybe. Now, prove that the difference is not the result of artifacts in the higher-rate equipment (i.e. that it is actually not doing a less-accurate job of recording and reproduction). Just because you can hear a difference, does not automatically mean that the high-rate gear is “superior”.
 
-The historical (cum technological) reasons for choosing 44.1 kHz as sampling rate are given here:
-[http://www.cs.columbia.edu/~hgs/audio/44.1.html](http://www.cs.columbia.edu/~hgs/audio/44.1.html)
+The historical (cum technological) reasons for choosing 44.1 kHz as sampling rate are given here: [http://www.cs.columbia.edu/~hgs/audio/44.1.html](http://www.cs.columbia.edu/~hgs/audio/44.1.html)
 
 To summarise:
 1. It is recognised that to be able to reproduce upto 20 kHz which is generally accepted as the highest frequency human beings can hear, one needs to sample it *at least* twice that highest frequency (as per the Nyquist theorem), which is 40 kHz or more.
@@ -218,11 +217,7 @@ Exactly how beneficial these high frequencies are in the real world is debatable
 
 Because a number of studies -
 
-[Neve 1992](http://jn.physiology.org/content/83/6/3548)
-[Theiss and Hawksford 1997](http://jn.physiology.org/content/83/6/3548)
-[Yamamoto 1996](http://jn.physiology.org/content/83/6/3548)
-[Yoshikawa et al. 1995](http://jn.physiology.org/content/83/6/3548),[1997](http://jn.physiology.org/content/83/6/3548)
-[Japan Audio Society 1999](http://jn.physiology.org/content/83/6/3548)
+[Neve 1992](http://jn.physiology.org/content/83/6/3548) [Theiss and Hawksford 1997](http://jn.physiology.org/content/83/6/3548) [Yamamoto 1996](http://jn.physiology.org/content/83/6/3548) [Yoshikawa et al. 1995](http://jn.physiology.org/content/83/6/3548),[1997](http://jn.physiology.org/content/83/6/3548) [Japan Audio Society 1999](http://jn.physiology.org/content/83/6/3548)
 
 - have shown that, even though the human ear can’t consciously perceive sound above 20KHz - (15-16KHz in most cases), brain activity is still affected by the presence of bandwidth extended as far as 32KHz or more. It could have to do with phase relationships between audible frequencies, which become more exact at higher resolutions, or the mere fact that the natural world imposes no 20KHz limit on frequencies transmitted through the air - (indeed there are ultrasonic frequencies present all around us) - and that we’re aware of them without “hearing” them, but in tests where the *same material* was presented *with* and *without* extended frequency response, listeners, *without being aware which one was being listened to*, preferred the extended frequency-response versions of the recordings well above statistical random.
 

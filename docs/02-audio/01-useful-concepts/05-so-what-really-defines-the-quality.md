@@ -40,8 +40,7 @@ Se lo spettrogramma ha un taglio netto a 22 kHz, significa quasi sempre che il f
 
 FLAC è solo il contenitore/compressione lossless, non il formato nativo SACD (che è DSD).
 
-recording at higher sample rates and downsampling, than directly recording at 22 Khz 16 bits.
-Noise floor is not anymore a concern this days, just a little.
+recording at higher sample rates and downsampling, than directly recording at 22 Khz 16 bits. Noise floor is not anymore a concern this days, just a little.
 
 When recording to 192/24, downsampling at 22/16, you can hear a most ‘’complete’’ and detailed waveform, than if it were recorded initially at 22.5/16.
 
@@ -59,11 +58,9 @@ Hi-Res FLAC files (24-bit/96 kHz or higher) are technically superior to CD-quali
 
 **Technical Differences**
 
-**Bit Depth**:
-- **24-bit** allows for a greater dynamic range (up to 144 dB) compared to **16-bit** (up to 96 dB). This means Hi-Res audio can capture quieter sounds and louder peaks more accurately.
+**Bit Depth**: - **24-bit** allows for a greater dynamic range (up to 144 dB) compared to **16-bit** (up to 96 dB). This means Hi-Res audio can capture quieter sounds and louder peaks more accurately.
 
-**Sample Rate**:
-- **96 kHz** (or higher) allows for capturing higher frequencies (up to 48 kHz) compared to **44.1 kHz**, which captures frequencies up to 22.05 kHz. This is important for certain types of music and sound design.
+**Sample Rate**: - **96 kHz** (or higher) allows for capturing higher frequencies (up to 48 kHz) compared to **44.1 kHz**, which captures frequencies up to 22.05 kHz. This is important for certain types of music and sound design.
 
 **Audibility of Differences**
 
@@ -109,8 +106,7 @@ Spotify ha OGG Vorbis a 320kbps (non AAC) che nel 95% dei casi sono indistinguib
 
 Quello che OP sta descrivendo è semplicemente un placebo effect gigantesco per via delle piccole differenze di volume tra i due servizi in streaming (e per il fatto che big number = better)
 
-Arriviamo inoltre al fatto che via Bluetooth non esiste in alcun modo una riproduzione lossless.
-La maggior parte dei dispositivi bluetooth (Airpods Pro e anche le Max da 500 e passa euro), non supportano neanche LDAC che, pur non essendo lossless, risulta ottimo e bensì usano AAC limitato a 256kbps al posto dei classici 320kbps dei file MP3 (o OGG Vorbis come Spotify).
+Arriviamo inoltre al fatto che via Bluetooth non esiste in alcun modo una riproduzione lossless. La maggior parte dei dispositivi bluetooth (Airpods Pro e anche le Max da 500 e passa euro), non supportano neanche LDAC che, pur non essendo lossless, risulta ottimo e bensì usano AAC limitato a 256kbps al posto dei classici 320kbps dei file MP3 (o OGG Vorbis come Spotify).
 
 Ultimamente, Spotify just works for me - le playlist sono ben curate e la web UI funziona bene. Credo comunque sia uno UI mess strabiliante e sotto moltissimi aspetti di tale AM e Tidal vincono a mani basse. Basti pensare ai Canvas di Spotify che sono dei video in 144p orribili quando Apple Music ha le album cover animate con degli effetti spettacolari. Su Spotify se scorri troppo in basso c'è un jumpscare di TikTok e si trasforma in uno scroll to listen di cosa a caso. Veramente terribile, se aggiungi il fatto dei podcast ti viene da spararti. Detto ciò, credo rimanga comunque il migliore per via del fattore "just works" e per Spotify Connect che uso un sacco per controllare la riproduzione su PC comodamente dallo smartphone.
 

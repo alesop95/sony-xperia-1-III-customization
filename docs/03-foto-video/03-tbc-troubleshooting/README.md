@@ -250,8 +250,7 @@ Prova a importare un config XML dedicato, che abilita e sistema anche la frontal
 
 **Come importare il Config XML**
 
-Copia il file XML nella cartella:
-GCam/Configs8 (creala se non c’è) nella memoria interna del telefono.
+Copia il file XML nella cartella: GCam/Configs8 (creala se non c’è) nella memoria interna del telefono.
 
 Apri GCam, fai doppio tap vicino al pulsante di scatto, si apre il menu per importare.
 
@@ -291,8 +290,7 @@ Configs8/xperia1iii_bsg_8.1.101_fix_front.xml
 
 **Come usarlo**
 
-Copia il file xperia1iii_bsg_8.1.101_fix_front.xml nella cartella:
-/GCam/Configs8/ (crea la cartella se non esiste) nella memoria interna del telefono
+Copia il file xperia1iii_bsg_8.1.101_fix_front.xml nella cartella: /GCam/Configs8/ (crea la cartella se non esiste) nella memoria interna del telefono
 
 Apri Google Camera (MGC)
 
@@ -398,8 +396,7 @@ La soluzione che ti propongo nel file XML è di forzare salvataggio in una carte
 
 **Come usarlo:**
 
-Copialo in:
-Memoria interna > GCam > Configs8
+Copialo in: Memoria interna > GCam > Configs8
 
 Apri GCam > doppio tap accanto al pulsante di scatto
 
@@ -407,12 +404,7 @@ Seleziona: xperia1iii_bsg_8.1.101_FULL_config.xml
 
 GCam si riavvierà con tutte le impostazioni applicate
 
-Questa configurazione include:
- HDR+ Auto
- RAW per tutte le cam
- Compatibilità Galleria
- Night Sight e Ritratto
- Supporto per tutte le fotocamere (anche frontale)
+Questa configurazione include: HDR+ Auto RAW per tutte le cam Compatibilità Galleria Night Sight e Ritratto Supporto per tutte le fotocamere (anche frontale)
 
 Ora che hai una **configurazione base potente e stabile**, puoi andare oltre e **personalizzare i dettagli fotografici** per adattarli al tuo stile (più realistico? più vivace? più cinematico?). Ti spiego cosa significano le voci principali e cosa puoi fare **in più**, se vuoi spingere la qualità.
 
@@ -431,31 +423,25 @@ Ora che hai una **configurazione base potente e stabile**, puoi andare oltre e *
 
 **1.  Modificare colori / saturazione / contrasto**
 
-Vuoi foto più vivide? più neutre?
-Queste modifiche si fanno nei **"Lib Patcher"** di GCam, solo da interfaccia (non da XML), nella sezione:
+Vuoi foto più vivide? più neutre? Queste modifiche si fanno nei **"Lib Patcher"** di GCam, solo da interfaccia (non da XML), nella sezione:
 
- Impostazioni Avanzate > Lib Patcher
-(es. cambiare Saturation, Highlight, Shadow, Sharpness)
+ Impostazioni Avanzate > Lib Patcher (es. cambiare Saturation, Highlight, Shadow, Sharpness)
 
 **2.  Forzare la lente giusta (wide, ultra, tele)**
 
 A volte GCam non switcha correttamente. Puoi forzare le 3 lenti:
 
- Impostazioni > Avanzate > Auxiliary cameras
-Attiva: Enable Aux Cameras
-Poi puoi accedere a tutte le 3 lenti dallo switch in alto
+ Impostazioni > Avanzate > Auxiliary cameras Attiva: Enable Aux Cameras Poi puoi accedere a tutte le 3 lenti dallo switch in alto
 
 **3.  Provare HDR Enhanced**
 
 Molto più dettagliato dell’HDR normale (ma più lento):
 
- Modalità HDR+ > HDR+ Enhanced
-(attivabile nella schermata principale GCam, se configurato nel config XML)
+ Modalità HDR+ > HDR+ Enhanced (attivabile nella schermata principale GCam, se configurato nel config XML)
 
 **4.  Night Sight con Astrophotography**
 
-Vuoi scattare le stelle? Attiva Astrophotography Mode (tieni fermo per 2-3s in Night Mode)
-Deve essere **attivata nel config** o da interfaccia:
+Vuoi scattare le stelle? Attiva Astrophotography Mode (tieni fermo per 2-3s in Night Mode) Deve essere **attivata nel config** o da interfaccia:
 
  Night Sight > Forza Astro Mode
 
@@ -544,14 +530,11 @@ serve a **regolare il modo in cui GCam gestisce i colori, il contrasto e la lumi
 
 **Cosa fa ToneMapping = natural?**
 
- **Colore realistico**
-Riduce la saturazione eccessiva (tipica di molte fotocamere stock), restituendo colori fedeli alla scena reale: perfetto per paesaggi, pelle, cibo, ecc.
+ **Colore realistico** Riduce la saturazione eccessiva (tipica di molte fotocamere stock), restituendo colori fedeli alla scena reale: perfetto per paesaggi, pelle, cibo, ecc.
 
- **Contrasto più morbido**
-Evita neri troppo schiacciati o luci bruciate, mantenendo dettagli sia nelle ombre che nelle alte luci.
+ **Contrasto più morbido** Evita neri troppo schiacciati o luci bruciate, mantenendo dettagli sia nelle ombre che nelle alte luci.
 
- **Perfetto per ricordi di viaggio**
-Ti dà una foto già bella e bilanciata **senza doverla ritoccare**, né temere un effetto “finto Instagram”.
+ **Perfetto per ricordi di viaggio** Ti dà una foto già bella e bilanciata **senza doverla ritoccare**, né temere un effetto “finto Instagram”.
 
 **Altri esempi di ToneMapping (solo per confronto):**
 
@@ -590,8 +573,7 @@ Non riesci a visualizzare le foto scattate dentro la GCam (galleria integrata o 
 
 **1. Frontale che non scatta foto - fix comuni**
 
-**a)** Prova a disabilitare l’HDR per la frontale
-Nel file XML, modifica o aggiungi nella sezione frontale:
+**a)** Prova a disabilitare l’HDR per la frontale Nel file XML, modifica o aggiungi nella sezione frontale:
 
 xml
 
@@ -669,8 +651,7 @@ Passare da lente wide → tele → ultrawide (se la ROM supporta Camera2 per cia
 
 Ma dovresti attivare:
 
- Impostazioni → Fotocamera API → Camera2 API
- “ID fotocamera” → scegli manualmente tra 0, 1, 2 per cambiare lente
+ Impostazioni → Fotocamera API → Camera2 API “ID fotocamera” → scegli manualmente tra 0, 1, 2 per cambiare lente
 
 Non ho capito il punto 1, posso fare da termux?
 
@@ -731,14 +712,11 @@ Perfetto, grazie per aver provato. Il fatto che **non restituisca nulla** indica
 
 **Possibili cause:**
 
-**Non hai dato i permessi root (su)**
-→ Senza root, dumpsys media.camera a volte non restituisce nulla o è limitato.
+**Non hai dato i permessi root (su)** → Senza root, dumpsys media.camera a volte non restituisce nulla o è limitato.
 
-**Comando non disponibile** su LineageOS da Termux
-→ Alcuni comandi dumpsys sono disabilitati per app user-space.
+**Comando non disponibile** su LineageOS da Termux → Alcuni comandi dumpsys sono disabilitati per app user-space.
 
-**ROM LineageOS non espone correttamente i sensori Camera2**
-→ E quindi non risultano visibili dal sistema stesso (nemmeno a livello basso).
+**ROM LineageOS non espone correttamente i sensori Camera2** → E quindi non risultano visibili dal sistema stesso (nemmeno a livello basso).
 
 **Proviamo una verifica alternativa: getprop**
 
@@ -770,14 +748,11 @@ CopiaModifica
 
 **Possibili cause:**
 
-**Non hai dato i permessi root (su)**
-→ Senza root, dumpsys media.camera a volte non restituisce nulla o è limitato.
+**Non hai dato i permessi root (su)** → Senza root, dumpsys media.camera a volte non restituisce nulla o è limitato.
 
-**Comando non disponibile** su LineageOS da Termux
-→ Alcuni comandi dumpsys sono disabilitati per app user-space.
+**Comando non disponibile** su LineageOS da Termux → Alcuni comandi dumpsys sono disabilitati per app user-space.
 
-**ROM LineageOS non espone correttamente i sensori Camera2**
-→ E quindi non risultano visibili dal sistema stesso (nemmeno a livello basso).
+**ROM LineageOS non espone correttamente i sensori Camera2** → E quindi non risultano visibili dal sistema stesso (nemmeno a livello basso).
 
 **Soluzione alternativa: Open Camera per test lenti manualmente**
 

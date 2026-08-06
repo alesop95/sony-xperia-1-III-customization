@@ -30,8 +30,7 @@ Ma FLAC è lossless compressa.
 
 FLAC comprime di solito al **25-50%**, a seconda del materiale.
 
- Quindi un file **FLAC 24/96** compresso a **~890 MB** è assolutamente credibile.
-Anzi, è **molto ben compresso**, probabilmente a livello FLAC 8 (massima compressione), e con poca dinamica “inutile” da codificare (sintomo di buon mastering o compressione ben fatta).
+ Quindi un file **FLAC 24/96** compresso a **~890 MB** è assolutamente credibile. Anzi, è **molto ben compresso**, probabilmente a livello FLAC 8 (massima compressione), e con poca dinamica “inutile” da codificare (sintomo di buon mastering o compressione ben fatta).
 
 **Bitrate 3665 kbps per 24/96 FLAC?**
 
@@ -43,8 +42,7 @@ Tipico range: **2800 - 4000 kbps**
 
 **Ultimo controllo: è autentico o upsample?**
 
-Anche se il peso e il bitrate sono realistici, **non garantisce che sia autentico** (cioè proveniente da una vera sorgente 24/96).
-Per capire se è **un falso upsample da CD**, serve **controllare lo spettrogramma**.
+Anche se il peso e il bitrate sono realistici, **non garantisce che sia autentico** (cioè proveniente da una vera sorgente 24/96). Per capire se è **un falso upsample da CD**, serve **controllare lo spettrogramma**.
 
 **Ecco cosa puoi fare:**
 
@@ -130,8 +128,7 @@ Quindi un FLAC 24/192 a 2123 kbps per *American Idiot* su una fonte hi-res è **
 
  **Mono o quasi**: se fosse un file mono (cosa assurda per American Idiot), il bitrate si dimezzerebbe… ma sarebbe comunque sopra i ~4000 kbps.
 
-**Conclusione:**
-→ Un FLAC 24/192 a 2123 kbps per *American Idiot* su una fonte hi-res **non è realistico.** È quasi sicuramente un fake HD (upsample o tag falsi). Se vuoi verificarlo, aprilo in Spek, Audacity o un altro spettrogramma: se sopra 20-22 kHz è tutto vuoto, è solo un CD ripackato.
+**Conclusione:** → Un FLAC 24/192 a 2123 kbps per *American Idiot* su una fonte hi-res **non è realistico.** È quasi sicuramente un fake HD (upsample o tag falsi). Se vuoi verificarlo, aprilo in Spek, Audacity o un altro spettrogramma: se sopra 20-22 kHz è tutto vuoto, è solo un CD ripackato.
 
 “American Idiot” dura circa 57 minuti = 3420 secondi.
 
@@ -175,13 +172,11 @@ Dimensione (MB)=4000×34208×1000=1710 MB\text{Dimensione (MB)} = \frac{4000 x
 
 **American Idiot FLAC 24/192 a 2123 kbps?**
 
-2123 x 3420 / (8 x 1000) = 908 \text{ MB}
-]
+2123 x 3420 / (8 x 1000) = 908 \text{ MB} ]
 
 **→ Troppo piccolo (meno di 1 GB).**
 
-→ **È quasi sicuramente un fake upsample o un FLAC di CD rimasterizzato e “spacciato” per 24/192.**
-→ Per rock vero a 24/192, aspettati **bitrate minimo ~3500 kbps**, e file da 1.5 GB in su.
+→ **È quasi sicuramente un fake upsample o un FLAC di CD rimasterizzato e “spacciato” per 24/192.** → Per rock vero a 24/192, aspettati **bitrate minimo ~3500 kbps**, e file da 1.5 GB in su.
 
 calcoliamolo **per rock vero a 24/96**, ad esempio proprio *American Idiot*.
 
@@ -463,15 +458,13 @@ se hai un file etichettato **MFSL 2-160** e risulta essere:
 
 con **bitrate ~977 kbps**
 
-…allora **non è una vera versione 24/96**, **né dovrebbe esserlo**:
-quella MFSL 2-160 è un **rip da CD** pubblicato nel 1984 da Mobile Fidelity Sound Lab. Quindi:
+…allora **non è una vera versione 24/96**, **né dovrebbe esserlo**: quella MFSL 2-160 è un **rip da CD** pubblicato nel 1984 da Mobile Fidelity Sound Lab. Quindi:
 
 **Verità:**
 
 **È una versione autentica MFSL**, ma **non in alta risoluzione**.
 
-Se ti viene proposta come **24/96**:
-→ è **falsa**, cioè un **upsample** da 16/44.1 → 24/96 senza alcun vantaggio reale.
+Se ti viene proposta come **24/96**: → è **falsa**, cioè un **upsample** da 16/44.1 → 24/96 senza alcun vantaggio reale.
 
 Il bitrate (977 kbps) lo conferma: **coerente con un FLAC da CD Audio**.
 
@@ -551,8 +544,7 @@ Ora confrontiamo:
 
 **Durata:** 76 min × 60 sec = 4560 sec
 
-**1187 kbps × 4560 sec ≈ 678 MB**
-→ ma hai **1,58 GB = 1580 MB**, quindi c’è **una discrepanza** tra il **bitrate stimato** da una fonte e il **peso reale** del file.
+**1187 kbps × 4560 sec ≈ 678 MB** → ma hai **1,58 GB = 1580 MB**, quindi c’è **una discrepanza** tra il **bitrate stimato** da una fonte e il **peso reale** del file.
 
 Questo ci suggerisce che:
 
@@ -697,8 +689,7 @@ Una versione **CD del 1980** può avere un DR reale = **12-14 dB**.
 
 Una versione **remaster compressa del 2005** può scendere a DR **5-7 dB**, anche se è 24/96.
 
- Quindi:
-**Avere 24 bit e 144 dB di potenziale** non serve a nulla se il mastering ha **compresso tutto a 6 dB effettivi**.
+ Quindi: **Avere 24 bit e 144 dB di potenziale** non serve a nulla se il mastering ha **compresso tutto a 6 dB effettivi**.
 
  In sintesi: legame tra bit depth e DR
 
@@ -785,8 +776,7 @@ Assicurati che i picchi siano coerenti con un audio a 24 bit (quindi dinamica pi
 
 **Conclusione:**
 
- **Sì, è realistico.**
-Se la durata dell’album è attorno ai 60-65 minuti e i valori dichiarati sono 24/96, un bitrate di 1926 kbps e 900 MB è coerente con un **vero FLAC lossless ad alta risoluzione**.
+ **Sì, è realistico.** Se la durata dell’album è attorno ai 60-65 minuti e i valori dichiarati sono 24/96, un bitrate di 1926 kbps e 900 MB è coerente con un **vero FLAC lossless ad alta risoluzione**.
 
 Anche lì l’utente ha fatto denied
 

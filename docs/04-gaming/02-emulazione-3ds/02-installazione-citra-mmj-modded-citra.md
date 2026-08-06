@@ -102,25 +102,13 @@ Un pacchetto completo di ottimizzazione per Citra MMJ sul tuo Sony Xperia 1 III 
 
 Innanzitutto si può creare un file config.ini in Windows 11:
 
-**[Layout]**
-SecondScreenLayout=0
-SwapScreens=false
+**[Layout]** SecondScreenLayout=0 SwapScreens=false
 
-**[Renderer]**
-UseHwRenderer=true
-UseShaderJit=true
-ResolutionFactor=3
-LinearFiltering=true
-AccurateMultiplication=false
-EnableHardwareShader=true
-ShaderDiskCache=true
+**[Renderer]** UseHwRenderer=true UseShaderJit=true ResolutionFactor=3 LinearFiltering=true AccurateMultiplication=false EnableHardwareShader=true ShaderDiskCache=true
 
-**[Audio]**
-EnableAudioStretching=false
+**[Audio]** EnableAudioStretching=false
 
-**[System]**
-RegionValue=-1
-EnableCpuJit=true
+**[System]** RegionValue=-1 EnableCpuJit=true
 
 Da mettere dentro /Android/data/org.citra.citra_mmj/files/citra-emu/config/.
 
@@ -146,8 +134,7 @@ Quello che sta succedendo è: Alcune versioni di **Citra MMJ recenti (come la tu
 
 /citra-emu/sdmc/
 
- **perfettamente corretta** . **Conclusione:** Usa /citra-emu/ nella root interna del dispositivo.
-Non usare la Android/data/... (è limitata, e in alcune build viene ignorata da MMJ). Quindi i file di configurazione vanno in:
+ **perfettamente corretta** . **Conclusione:** Usa /citra-emu/ nella root interna del dispositivo. Non usare la Android/data/... (è limitata, e in alcune build viene ignorata da MMJ). Quindi i file di configurazione vanno in:
 
 /citra-emu/config/
 

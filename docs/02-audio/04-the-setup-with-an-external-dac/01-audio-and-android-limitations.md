@@ -45,9 +45,7 @@ Dunque, se si vuole uscire in 96kHz o superiore devi per forza usare un DAC este
 
 1. Usare DAC esterni USB, compatibile UAC2 (USB Audio Class 2) che sono meno vincolati dal sistema Audio HAL interno garantisce il bypass di Audioflinger. Questo perché se uno usa un DAC esterno USB, puoi selezionare un motore che sfrutti direttamente il protocollo USB per audio ad alta risoluzione (96kHz, 192kHz, etc). Insieme al DAC esterno allora si può provare:
       1. FiioMusic - lavora al meglio con DAC esterni USB. Ha supporto per Bit-perfect playback via USB DAC, DSD (nativo e DoP), MQA unfolding, Supporto file CUE, ISO SACD, ecc… È pensata per audiofili, ma non può bypassare il mixer Android sul DAC interno, se non gestito correttamente dal firmware
-- Fiio Music App è progettata per funzionare principalmente con DAC esterni USB Audio Class 2 (UAC2).
-      1. Poweramp - bypass del mixer se il DAC USB è compatibile.
-      1. USB Audio Player PRO (UAPP) - bypass assoluto, driver proprietario
+- Fiio Music App è progettata per funzionare principalmente con DAC esterni USB Audio Class 2 (UAC2). 1. Poweramp - bypass del mixer se il DAC USB è compatibile. 1. USB Audio Player PRO (UAPP) - bypass assoluto, driver proprietario
 - In *questo* scenario, NON importa se la HAL è assente o limitata, perché l’audio non passa più dal sistema Android: l’app invia l’audio direttamente al DAC USB.
 1. Fare una modifica avanzata sostituendo l'Audio HAL con quello estratto dal firmware Sony (richiede conoscenze tecniche, root, SELinux permissivo, ecc.); Tuttavia, non sempre funziona su LineageOS per incompatibilità con il kernel
 

@@ -20,8 +20,7 @@ Calcolo bitrate WAV:
 
 FLAC compresso:
 
- **600 - 1000 kbps**
-(≈ 30-60% di compressione possibile)
+ **600 - 1000 kbps** (≈ 30-60% di compressione possibile)
 
 molto compresso: **500 kbps**
 
@@ -67,9 +66,7 @@ minimo accettabile (musica molto semplice): ~3500 kbps
 
 **Regola pratica**
 
- **Un FLAC 24/192 sotto 3000 kbps è quasi sempre sospetto** (fake upsample o metadati falsi).
- **Un FLAC 24/96 sotto 1500 kbps è sospetto.**
- **Un CD rip in FLAC (16/44.1) tra 600-1000 kbps è normalissimo.**
+ **Un FLAC 24/192 sotto 3000 kbps è quasi sempre sospetto** (fake upsample o metadati falsi). **Un FLAC 24/96 sotto 1500 kbps è sospetto.** **Un CD rip in FLAC (16/44.1) tra 600-1000 kbps è normalissimo.**
 
 Come fanno allora su una fonte hi-res ad esistere diverse versioni dello stesso album (ad esempio Random Access Memories dei Daft Punk) tutte versioni flac da 24bit e 96kHz ma allo stesso tempo avere bitrates differenti ma tutto l'album nel complessivo pesare uguale (in termini di Gb o Mb)? Quando su una fonte hi-res (o altrove) vedi **più versioni dello stesso album FLAC 24bit/96kHz** che:
 

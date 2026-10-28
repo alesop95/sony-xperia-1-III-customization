@@ -5,19 +5,19 @@ docx-to-md.py - Convertitore deterministico da .docx a documentazione Markdown.
 
 Parsa integralmente un documento Word in ordine di corpo (prosa, liste numerate e
 puntate, tabelle, immagini) e lo spezza in file Markdown separati: un file per ogni
-sezione H5, con le sezioni piu' profonde (H6-H9) annidate come sotto-titoli. Gli H4
+sezione H5, con le sezioni più profonde (H6-H9) annidate come sotto-titoli. Gli H4
 con figli H5 diventano cartelle con README.md; gli H4 senza figli H5 diventano un
 singolo file. Le macrocategorie (H3) diventano cartelle numerate.
 
-La conversione e' verbatim: nessun contenuto viene rimosso o corretto.
+La conversione è verbatim: nessun contenuto viene rimosso o corretto.
 
 Le immagini vengono estratte in cartelle assets/ accanto ai documenti e restano fuori
-dal versionamento (gitignore *.png/*.jpeg gia' presente).
+dal versionamento (gitignore *.png/*.jpeg già presente).
 
 Uso:
     python docx-to-md.py SORGENTE.docx --out docs [--macro N]
 
-Dipendenze: python-docx (gia' presente).
+Dipendenze: python-docx (già presente).
 """
 
 import argparse
@@ -48,7 +48,7 @@ MACRO_NAMES = {
 }
 
 
-# --- utilita' di slug -------------------------------------------------------
+# --- utilità di slug -------------------------------------------------------
 def slugify(text, fallback="sezione"):
     text = unicodedata.normalize("NFKD", text)
     text = "".join(c for c in text if not unicodedata.combining(c))
@@ -89,7 +89,6 @@ def cleanup_text(content):
 # --- numbering.xml: classifica liste numerate vs puntate --------------------
 def build_numbering_map(document):
     """Ritorna funzione (numId, ilvl) -> 'bullet'|'ordered'."""
-    fmt = {}  # numId -> {ilvl -> numFmt}
     try:
         npart = document.part.numbering_part
     except Exception:
@@ -375,7 +374,7 @@ def main():
 
     # Redazioni deterministiche: sostituzioni regex applicate al testo finale per neutralizzare
     # riferimenti non desiderati (es. acquisizione P2P), preservando l'analisi tecnica. Le regole
-    # vivono nel sidecar, l'output resta riproducibile e la redazione e' tracciata nel report.
+    # vivono nel sidecar, l'output resta riproducibile e la redazione è tracciata nel report.
     red_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "redactions.json")
     redaction_rules = []
     if os.path.exists(red_path):
@@ -434,7 +433,7 @@ def main():
     cur_macro_dir = None
     cur_macro_file = None
     cur_h4_dir = None
-    cur_h4_file = None  # file corrente di livello H4 (se non e' cartella)
+    cur_h4_file = None  # file corrente di livello H4 (se non è cartella)
     cur_target = root_file
     h4_counter = 0
     h5_counter = 0
@@ -602,7 +601,7 @@ def main():
     report.append("")
     report.append("> Generato da `tools/docx-to-md.py`. Conversione verbatim: nessun contenuto "
                   "rimosso. Questo report elenca conteggi, marcatori di lavoro dell'autore e "
-                  "mappa delle immagini, per tracciabilita'.")
+                  "mappa delle immagini, per tracciabilità.")
     report.append("")
     report.append("## Conteggi")
     report.append("")
@@ -648,7 +647,7 @@ def main():
     report.append("## Redazioni applicate")
     report.append("")
     report.append("Sostituzioni deterministiche (sidecar `tools/redactions.json`) per neutralizzare "
-                  "riferimenti all'acquisizione P2P, preservando l'analisi tecnica. Questa e' una "
+                  "riferimenti all'acquisizione P2P, preservando l'analisi tecnica. Questa è una "
                   "divergenza voluta dal testo verbatim del sorgente.")
     report.append("")
     report.append("- Totale sostituzioni: %d" % total_redactions)

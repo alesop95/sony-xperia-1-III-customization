@@ -1,6 +1,7 @@
 {
   "tools/docx-to-md.py": {
     "testa": "b4920472d1764bad9ff3126898d87571bde04b8a",
-    "il": "2026-10-28"
+    "il": "2026-11-04",
+    "locale_sha256_lf": "67bd48395b5642a2dc92816fc3d3d240f1ee281b370c5303ee93b85d96b3e545"
   }
 }

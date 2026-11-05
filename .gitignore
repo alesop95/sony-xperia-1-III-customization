@@ -51,3 +51,7 @@ CLAUDE.local.md
 # Config di redazione locale (pari al docx sorgente: input di generazione, non versionato)
 /tools/redactions.json
 /history-redactions.txt
+
+# Dati pubblici degli strumenti tipografici, copiati dal template.
+!/tools/accents-exclude.txt
+!/tools/dashes-exclude.txt
